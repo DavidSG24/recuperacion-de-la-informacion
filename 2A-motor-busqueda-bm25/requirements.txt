@@ -1,0 +1,6 @@
+# Actividad 2A — Motor de búsqueda léxico y BM25
+# Instalación: pip install -r requirements.txt
+nltk>=3.8          # stopwords en español y SnowballStemmer (hay respaldo si falta)
+ipywidgets>=8.0    # interfaz de consulta dentro del notebook (paso 5)
+pandas>=2.0        # tablas de estadísticas y de evaluación
+jupyterlab>=4.0    # entorno de ejecución del notebook

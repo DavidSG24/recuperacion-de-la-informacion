@@ -1,0 +1,240 @@
+% Reporte de la actividad 2A — Motor de búsqueda léxico y BM25
+% Compilación: latexmk -pdf reporte.tex   (o: pdflatex reporte.tex, dos veces)
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage[margin=1.9cm,top=1.7cm,bottom=1.7cm]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{acento}{HTML}{1F6FEB}
+\newcommand{\term}[1]{\textcolor{acento}{\texttt{#1}}}
+
+\setlist[itemize]{topsep=2pt,itemsep=1pt,parsep=0pt,leftmargin=1.2em}
+\setlist[enumerate]{topsep=2pt,itemsep=1pt,parsep=0pt,leftmargin=1.5em}
+\setlength{\parskip}{2pt}
+\renewcommand{\arraystretch}{1.05}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\titlespacing*{\paragraph}{0pt}{4pt}{0.6em}
+
+\title{\vspace{-1.4cm}\textbf{Motor de búsqueda léxico y BM25}\\[2pt]
+\large Análisis de aciertos y del límite de la búsqueda exacta}
+\author{David Segundo García}
+\date{Actividad 2A \textperiodcentered\ \today}
+
+\begin{document}
+\maketitle
+\vspace{-0.7cm}
+
+\section{Sistema evaluado}
+
+Se implementó desde cero, en un \emph{notebook} de Jupyter, un buscador léxico completo sobre un
+corpus propio de \textbf{120 documentos en español} repartidos en \textbf{12 temáticas}
+(inteligencia artificial, astronomía, salud, gastronomía, deportes, economía, medio ambiente,
+historia, arte, transporte, ciberseguridad y viajes). El sistema tiene tres piezas:
+
+\begin{enumerate}
+  \item \textbf{Preprocesamiento.} Minúsculas $\rightarrow$ tokenización con expresión regular que
+        descarta puntuación $\rightarrow$ filtro de tokens de un carácter $\rightarrow$ eliminación
+        de 368 \emph{stopwords} $\rightarrow$ \emph{stemming} Snowball para español $\rightarrow$
+        supresión de tildes en la raíz. La \textbf{misma} función se aplica al corpus y a la
+        consulta, condición sin la cual los términos no serían comparables.
+  \item \textbf{Índice invertido} con diccionarios nativos: \term{término $\rightarrow$ \{documento: tf\}},
+        más las longitudes $|D|$, la frecuencia documental $\mathit{df}$ y la longitud promedio
+        \emph{avgdl}.
+  \item \textbf{Ranking BM25} con $k_1 = 1.5$, $b = 0.75$ e IDF de Robertson en su variante de
+        Lucene, verificado contra el cálculo manual de la fórmula.
+\end{enumerate}
+
+\[
+\text{score}(D,Q)=\sum_{i=1}^{n}\text{IDF}(q_i)\cdot
+\frac{f(q_i,D)\,(k_1+1)}{f(q_i,D)+k_1\!\left(1-b+b\dfrac{|D|}{\text{avgdl}}\right)},
+\qquad
+\text{IDF}(q_i)=\ln\!\left(\frac{N-n(q_i)+0.5}{n(q_i)+0.5}+1\right)
+\]
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lr@{\hspace{2.2em}}lr}
+\toprule
+\textbf{Corpus} & & \textbf{Índice} & \\
+\midrule
+Documentos            & 120   & Términos únicos (vocabulario) & 1\,940 \\
+Temáticas             & 12    & Entradas de \emph{postings}   & 3\,608 \\
+Palabras crudas       & 6\,369 & Longitud promedio \emph{avgdl} & 32.50 \\
+Tokens indexables     & 3\,900 & Rango de $|D|$                & 24 -- 45 \\
+Reducción tras limpiar & 38.8\,\% & Términos con $\mathit{df}=1$ & 1\,211 (62.4\,\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Metodología de evaluación}
+
+Se definieron 14 consultas con su \textbf{categoría esperada} como criterio de relevancia. Sobre
+ellas se calcularon tres métricas: \textbf{P@5} (estricta, con denominador 5), \textbf{P@k efectiva}
+(sobre los documentos realmente recuperados) y \textbf{MRR}.
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lccc}
+\toprule
+\textbf{Métrica} & \textbf{Valor} & \textbf{Interpretación} \\
+\midrule
+MRR                    & \textbf{1.000} & El documento correcto quedó primero en las 14 consultas \\
+P@k efectiva (promedio) & 0.682 & Dos de cada tres resultados devueltos son de la categoría esperada \\
+P@5 estricta (promedio) & 0.500 & Penaliza los huecos: varias consultas recuperan menos de 5 documentos \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La brecha entre ambas precisiones no indica error de ranking sino \textbf{cobertura}: con solo diez
+documentos por temática, consultas muy específicas como \emph{«nixtamalización del maíz para
+tortillas»} recuperan un único documento —el correcto— y la P@5 estricta las castiga con 0.2. La
+categoría es además un criterio duro: en \emph{«energía solar y eólica renovable»} los documentos
+de transporte sobre baterías y motores eléctricos cuentan como fallo aunque sean pertinentes. Las
+cifras son, por tanto, una cota inferior de la calidad real.
+
+\section{Casos en los que el buscador fue preciso}
+
+\subsection*{Caso 1: términos raros — «nixtamalización del maíz para tortillas»}
+
+Las tres raíces de la consulta (\term{nixtamaliz}, \term{maiz}, \term{tortill}) tienen
+$\mathit{df}=1$, es decir, aparecen en un único documento del corpus. Su IDF es el máximo posible
+(4.39) y ningún otro documento puede competir:
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Término} & \textbf{tf} & \textbf{df} & \textbf{IDF} & \textbf{Aporte BM25} \\
+\midrule
+\term{nixtamaliz} & 2 & 1 & 4.3903 & 6.1802 \\
+\term{maiz}       & 2 & 1 & 4.3903 & 6.1802 \\
+\term{tortill}    & 1 & 1 & 4.3903 & 4.3010 \\
+\midrule
+\multicolumn{4}{r}{\textbf{Total}} & \textbf{16.6614} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+El desglose exhibe además la \textbf{saturación} de $k_1$: duplicar la frecuencia (de $tf=1$ a
+$tf=2$) sube el aporte de 4.30 a 6.18, no a 8.60. El décimo hallazgo de una palabra no vale diez
+veces el primero, que es exactamente lo que distingue a BM25 de un TF-IDF ingenuo.
+
+\subsection*{Caso 2: acumulación de evidencia — «ransomware respaldo y cifrado»}
+
+Ningún término es tan raro como en el caso anterior, pero los tres coinciden en el mismo documento
+(\emph{Ransomware y recuperación}, score 14.04) mientras que el resto de candidatos acierta solo
+uno o dos. La suma de aportes separa con claridad al primero: BM25 premia la
+\textbf{cobertura de la consulta}, no la repetición de un único término.
+
+\subsection*{Caso 3: normalización por longitud — «energía»}
+
+Con un solo término en la consulta, dos documentos tienen $tf=2$: \emph{Energía solar fotovoltaica}
+($|D|=30$) y \emph{Materia oscura y energía oscura} ($|D|=37$). Con $b=0.75$ gana el documento más
+corto (4.283 frente a 3.999), porque concentra la misma evidencia en menos texto. Al fijar $b=0$
+ambos empatan en 4.177: la normalización por \emph{avgdl} es lo único que los separa.
+
+\section{Caso de fallo por búsqueda exacta: los sinónimos}
+
+El corpus se redactó deliberadamente usando \emph{automóvil}, \emph{médico} y \emph{computadora}, y
+evitando por completo \emph{coche}, \emph{doctor} y \emph{ordenador}. BM25 es un modelo
+\textbf{léxico}: puntúa coincidencia de cadenas, no de significados. Un término ausente del
+vocabulario tiene $\mathit{df}=0$, su IDF se define como 0 y su aportación al ranking es
+exactamente cero. El resultado son \textbf{tres modos de fallo distintos}, de gravedad creciente:
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{@{}p{3.1cm}p{2.0cm}rp{5.1cm}r@{}}
+\toprule
+\textbf{Consulta} & \textbf{Raíces} & \textbf{df} & \textbf{Primer resultado} & \textbf{Score} \\
+\midrule
+coche eléctrico     & coch, electr & 0, 5 & Automóviles eléctricos y autonomía & 5.017 \\
+\emph{automóvil eléctrico} & \emph{automovil, electr} & \emph{2, 5} & \emph{Automóviles eléctricos y autonomía} & \emph{10.373} \\
+\midrule
+doctor              & doctor & 0 & \textcolor{red}{--- sin resultados ---} & 0.000 \\
+\emph{médico}       & \emph{medic} & \emph{1} & \emph{Prevención de la diabetes tipo 2} & \emph{4.187} \\
+\midrule
+ordenador           & orden & 2 & \textcolor{red}{Chocolate desde el cacao} & 4.077 \\
+\emph{computadora}  & \emph{comput} & \emph{4} & \emph{Visión por computadora} & \emph{4.460} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{1. Degradación silenciosa.} \emph{«coche eléctrico»} sí devuelve resultados, pero por el
+motivo equivocado: \term{coch} aporta 0.0 y todo el orden lo decide \term{electr}. El score del
+documento correcto cae de 10.373 a 5.017, y compite en igualdad con documentos sobre energía solar
+o baterías que también contienen \emph{eléctrico}. Basta un corpus algo mayor para que el documento
+buscado deje de aparecer en el Top-5.
+
+\paragraph{2. Cero resultados.} La consulta \emph{«doctor»} devuelve una lista vacía: ningún término
+aporta puntuación y el conjunto de candidatos queda vacío. El corpus habla de médicos, de
+telemedicina y de especialistas en varios documentos, pero el buscador no tiene forma de saberlo.
+
+\paragraph{3. Falso positivo por colisión de raíces (el más grave).} \emph{«ordenador»} es reducido
+por el \emph{stemmer} a \term{orden}, raíz que el corpus usa en «el templado \emph{ordena} los
+cristales de manteca de cacao». El primer resultado es un documento sobre chocolate, presentado con
+la misma confianza que cualquier acierto. Lo mismo ocurre con \emph{«cita con el doctor»}: la raíz
+\term{cit} aparece en «las cuatro grandes \emph{citas} del calendario» y el buscador responde con un
+documento de tenis (score 3.801). El \emph{stemming}, que en general mejora el recall, aquí fabrica
+una coincidencia que no existe. \textbf{Un resultado equivocado es peor que ningún resultado},
+porque no hay señal alguna de que la consulta se entendió mal.
+
+\section{Mitigaciones evaluadas}
+
+\paragraph{Expansión de consulta con diccionario de sinónimos (implementada).} Antes de puntuar se
+añaden a la consulta las variantes conocidas de cada término. No requiere reconstruir el índice y su
+costo es prácticamente nulo. Recupera los tres casos: \emph{coche eléctrico} pasa de 5.017 a
+\textbf{10.373}, \emph{cita con el doctor} deja de responder tenis para devolver un documento
+médico (4.187) y \emph{ordenador} recupera \emph{Visión por computadora} (4.460). Su límite es
+estructural: solo cubre lo que alguien anticipó; \emph{«vehículo de cero emisiones»} seguiría
+fallando.
+
+\paragraph{Recuperación densa e híbrida (discutida).} Representar consulta y documentos como
+vectores densos sitúa \emph{coche} y \emph{automóvil} próximos en el espacio semántico aunque no
+compartan una sola letra.
+
+\begin{table}[h]
+\centering\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Enfoque} & \textbf{Sinónimos} & \textbf{Términos raros} & \textbf{Costo} & \textbf{Explicabilidad} \\
+\midrule
+BM25 (léxico)            & No & Excelente & Muy bajo, CPU & Total \\
+Denso (\emph{embeddings}) & Sí & Débil     & Alto          & Baja \\
+Híbrido (BM25 + denso)   & Sí & Buena     & Medio-alto    & Media \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Conclusiones}
+
+\begin{enumerate}
+  \item El preprocesamiento fija el techo del sistema: redujo 6\,369 palabras a 3\,900 términos
+        indexables y es lo que permite que \emph{baterías} recupere documentos que escriben
+        \emph{batería}. Cualquier asimetría entre el camino del corpus y el de la consulta rompe la
+        recuperación sin producir ningún error visible.
+  \item BM25 acierta de forma consistente cuando consulta y documento comparten vocabulario:
+        MRR de 1.000 en las 14 consultas evaluadas. Los aciertos más nítidos son los de términos con
+        $\mathit{df}$ bajo, donde el IDF domina la suma de aportes.
+  \item Los tres componentes de la fórmula son verificables por separado, pero su efecto agregado en
+        un corpus de 120 documentos de longitud homogénea es pequeño: conviene no sobreinterpretar
+        una tabla de sensibilidad de $k_1$ y $b$ calculada a esta escala.
+  \item El fallo por sinónimos no es un defecto de implementación sino el límite del modelo, y su
+        forma más peligrosa no es la lista vacía sino el falso positivo por colisión de raíces.
+  \item La elección de mitigación es una decisión de costo: un diccionario de sinónimos resuelve lo
+        previsible con costo nulo; la recuperación densa resuelve el caso general a cambio de un
+        modelo, un índice vectorial y una pérdida de explicabilidad. La práctica actual —y la razón
+        por la que BM25 sigue vigente treinta años después— es combinar ambas señales en un
+        recuperador híbrido.
+\end{enumerate}
+
+\end{document}

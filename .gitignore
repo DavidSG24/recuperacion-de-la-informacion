@@ -1,0 +1,21 @@
+# Sistema
+.DS_Store
+
+# Datos pesados: el notebook 3A descarga GloVe 6B automáticamente
+Tarea/data/
+
+# Paquete de entrega (duplica los archivos del repositorio)
+*.zip
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# Auxiliares de LaTeX
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
