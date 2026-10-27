@@ -2,7 +2,7 @@
 .DS_Store
 
 # Datos pesados: el notebook 3A descarga GloVe 6B automáticamente
-Tarea/data/
+Entrega_3B/data/
 
 # Paquete de entrega (duplica los archivos del repositorio)
 *.zip

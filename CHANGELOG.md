@@ -3,6 +3,8 @@
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [Unreleased]
+### Changed
+- Carpetas renombradas: `2A-motor-busqueda-bm25/` → `Entrega_2A/` y `Tarea/` → `Entrega_3B/`.
 
 ## [0.2.0] - 2026-09-28
 ### Added
