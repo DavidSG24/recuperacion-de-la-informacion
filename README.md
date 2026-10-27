@@ -6,6 +6,7 @@ Actividades del curso **Recuperación de información 2026-2** (MCDI · INFOTEC)
 |---|---|---|
 | **2A** · Motor de búsqueda léxico y BM25 | [`Entrega_2A/`](Entrega_2A/) | Preprocesamiento, índice invertido y ranking BM25 implementados desde cero sobre un corpus propio de 120 documentos; análisis de aciertos y del límite de la búsqueda exacta. |
 | **3A** · Índices de vecinos más cercanos aproximados | [`Entrega_3B/`](Entrega_3B/) | LSH, IVF-PQ (FAISS) y HNSW (hnswlib) frente a búsqueda exhaustiva sobre GloVe 6B (10k y 100k vectores): barridos de hiperparámetros, recall@10 / tiempo / memoria, punto de operación, escalabilidad e interfaz con ipywidgets. |
+| **4A** · Buscador semántico híbrido y *re-ranking* con Transformers | [`Entrega_4A/`](Entrega_4A/) | Mismo corpus de la 2A codificado con dos *bi-encoders* (MiniLM 384 d, E5 768 d), Top-20 por coseno en HNSW, *re-ranking* con dos *cross-encoders* (mMARCO, BGE), fusión híbrida RRF, 20 consultas con juicios graduados (nDCG@5, MRR, recall@5), latencia por etapa y tablero comparativo con ipywidgets. |
 
 Cada carpeta contiene el notebook ejecutado, el reporte en PDF, su fuente LaTeX y un `requirements.txt`.
 
@@ -15,7 +16,7 @@ Requiere Python ≥ 3.10.
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -r Entrega_3B/requirements.txt          # o Entrega_2A/requirements.txt
+pip install -r Entrega_4A/requirements.txt          # o Entrega_3B/ · Entrega_2A/
 jupyter lab
 ```
 
@@ -27,8 +28,16 @@ No se necesitan variables de entorno ni credenciales.
 - **3A:** abrir `Entrega_3B/Actividad3A_Indices_ANN.ipynb` y ejecutar todas las celdas. La primera ejecución descarga GloVe 6B
   (~822 MB comprimido) a `Entrega_3B/data/`, carpeta excluida del repositorio. El barrido completo tarda ~1 min en un solo hilo y
   regenera `results/*.csv` y `figures/*.png`.
-- **Reportes:** dentro de cada carpeta, `latexmk -pdf reporte.tex` (en 3A: `latexmk -pdf -jobname=Reporte_Actividad3A reporte.tex`).
+- **4A:** abrir `Entrega_4A/Actividad4A_Buscador_Semantico.ipynb` y ejecutar todas las celdas (o
+  `jupyter nbconvert --to notebook --execute --inplace Actividad4A_Buscador_Semantico.ipynb` desde `Entrega_4A/`).
+  La primera ejecución descarga de Hugging Face cuatro modelos (~4 GB) a la caché local (`~/.cache/huggingface`);
+  después no necesita red. Tarda ~5 min en CPU, casi todo en medir la latencia del *re-ranker* BGE, y regenera
+  `results/*.csv` y `figures/*.png`.
+- **Reportes:** dentro de cada carpeta, `latexmk -pdf reporte.tex` (en 3A y 4A: `latexmk -pdf -jobname=Reporte_Actividad3A reporte.tex`
+  y `latexmk -pdf -jobname=Reporte_Actividad4A reporte.tex`).
 
 ## Datos
 
 - GloVe 6B (Pennington, Socher y Manning, 2014), dominio público: <https://nlp.stanford.edu/projects/glove/>.
+- Modelos de la 4A (Hugging Face): `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, `intfloat/multilingual-e5-base`,
+  `cross-encoder/mmarco-mMiniLMv2-L12-H384-v1` y `BAAI/bge-reranker-v2-m3`.

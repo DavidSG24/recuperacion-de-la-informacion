@@ -1,0 +1,181 @@
+configuracion,consulta,tipo,nDCG@5,MRR,recall@5,recall@20,recuperados
+BM25,q01,léxica,0.9903929125301808,1.0,1.0,1.0,11
+BM25,q02,léxica,1.0,1.0,1.0,1.0,1
+BM25,q03,léxica,0.8262346571285599,1.0,0.5,0.5,4
+BM25,q04,léxica,0.878961873034099,1.0,0.6666666666666666,1.0,12
+BM25,q05,léxica,1.0,1.0,1.0,1.0,10
+BM25,q06,léxica,1.0,1.0,1.0,1.0,3
+BM25,q07,léxica,0.8262346571285599,1.0,0.5,0.5,1
+BM25,q08,léxica,1.0,1.0,1.0,1.0,3
+BM25,q09,paráfrasis,0.944847956559586,1.0,1.0,1.0,12
+BM25,q10,paráfrasis,0.0,0.0,0.0,0.0,2
+BM25,q11,paráfrasis,0.819876640193745,1.0,0.6666666666666666,0.6666666666666666,20
+BM25,q12,paráfrasis,0.2327264211588769,0.5,0.5,0.75,8
+BM25,q13,paráfrasis,0.4396592698888862,1.0,0.25,0.25,7
+BM25,q14,paráfrasis,0.6576630675781056,1.0,0.25,0.25,5
+BM25,q15,paráfrasis,0.27541155237618664,1.0,0.5,0.5,1
+BM25,q16,paráfrasis,0.9639404333166532,1.0,1.0,1.0,9
+BM25,q17,paráfrasis,0.8262346571285599,1.0,0.5,1.0,14
+BM25,q18,paráfrasis,1.0,1.0,1.0,1.0,1
+BM25,q19,paráfrasis,0.8262346571285599,1.0,0.5,0.5,15
+BM25,q20,paráfrasis,0.0,0.0,0.0,0.0,1
+MiniLM,q01,léxica,1.0,1.0,1.0,1.0,20
+MiniLM,q02,léxica,1.0,1.0,1.0,1.0,20
+MiniLM,q03,léxica,0.8262346571285599,1.0,0.5,0.5,20
+MiniLM,q04,léxica,0.9726097514324383,1.0,1.0,1.0,20
+MiniLM,q05,léxica,0.878961873034099,1.0,0.6666666666666666,1.0,20
+MiniLM,q06,léxica,1.0,1.0,1.0,1.0,20
+MiniLM,q07,léxica,1.0,1.0,1.0,1.0,20
+MiniLM,q08,léxica,0.8344475896326595,1.0,0.6666666666666666,1.0,20
+MiniLM,q09,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM,q10,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM,q11,paráfrasis,0.8213137146137828,1.0,1.0,1.0,20
+MiniLM,q12,paráfrasis,0.7189664876551615,1.0,0.75,1.0,20
+MiniLM,q13,paráfrasis,0.6594889048333293,1.0,0.5,1.0,20
+MiniLM,q14,paráfrasis,0.5832503376961229,1.0,0.75,1.0,20
+MiniLM,q15,paráfrasis,0.6885288809404666,1.0,1.0,1.0,20
+MiniLM,q16,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM,q17,paráfrasis,0.9639404333166532,1.0,1.0,1.0,20
+MiniLM,q18,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM,q19,paráfrasis,0.8262346571285599,1.0,0.5,1.0,20
+MiniLM,q20,paráfrasis,0.8262346571285599,1.0,0.5,1.0,20
+E5,q01,léxica,0.9903929125301808,1.0,1.0,1.0,20
+E5,q02,léxica,1.0,1.0,1.0,1.0,20
+E5,q03,léxica,0.8262346571285599,1.0,0.5,0.5,20
+E5,q04,léxica,0.9832184408687481,1.0,1.0,1.0,20
+E5,q05,léxica,0.9832184408687481,1.0,1.0,1.0,20
+E5,q06,léxica,1.0,1.0,1.0,1.0,20
+E5,q07,léxica,1.0,1.0,1.0,1.0,20
+E5,q08,léxica,0.9790187994940358,1.0,1.0,1.0,20
+E5,q09,paráfrasis,0.9639404333166532,1.0,1.0,1.0,20
+E5,q10,paráfrasis,1.0,1.0,1.0,1.0,20
+E5,q11,paráfrasis,1.0,1.0,1.0,1.0,20
+E5,q12,paráfrasis,0.7189664876551615,1.0,0.75,1.0,20
+E5,q13,paráfrasis,0.8295723276165339,1.0,0.75,1.0,20
+E5,q14,paráfrasis,0.9055866445611575,1.0,0.75,1.0,20
+E5,q15,paráfrasis,1.0,1.0,1.0,1.0,20
+E5,q16,paráfrasis,1.0,1.0,1.0,1.0,20
+E5,q17,paráfrasis,0.9639404333166532,1.0,1.0,1.0,20
+E5,q18,paráfrasis,1.0,1.0,1.0,1.0,20
+E5,q19,paráfrasis,0.9327783893101107,1.0,1.0,1.0,20
+E5,q20,paráfrasis,0.944847956559586,1.0,1.0,1.0,20
+MiniLM + mMARCO,q01,léxica,0.9055866445611575,1.0,0.75,1.0,20
+MiniLM + mMARCO,q02,léxica,1.0,1.0,1.0,1.0,20
+MiniLM + mMARCO,q03,léxica,0.8262346571285599,1.0,0.5,0.5,20
+MiniLM + mMARCO,q04,léxica,0.9832184408687481,1.0,1.0,1.0,20
+MiniLM + mMARCO,q05,léxica,0.878961873034099,1.0,0.6666666666666666,1.0,20
+MiniLM + mMARCO,q06,léxica,1.0,1.0,1.0,1.0,20
+MiniLM + mMARCO,q07,léxica,0.9327783893101107,1.0,1.0,1.0,20
+MiniLM + mMARCO,q08,léxica,1.0,1.0,1.0,1.0,20
+MiniLM + mMARCO,q09,paráfrasis,0.9327783893101107,1.0,1.0,1.0,20
+MiniLM + mMARCO,q10,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + mMARCO,q11,paráfrasis,0.878961873034099,1.0,0.6666666666666666,1.0,20
+MiniLM + mMARCO,q12,paráfrasis,0.7255804225316207,1.0,1.0,1.0,20
+MiniLM + mMARCO,q13,paráfrasis,0.7170533846952881,1.0,0.5,1.0,20
+MiniLM + mMARCO,q14,paráfrasis,0.8903894887369824,1.0,0.75,1.0,20
+MiniLM + mMARCO,q15,paráfrasis,0.9639404333166532,1.0,1.0,1.0,20
+MiniLM + mMARCO,q16,paráfrasis,0.8262346571285599,1.0,0.5,1.0,20
+MiniLM + mMARCO,q17,paráfrasis,0.6885288809404666,1.0,1.0,1.0,20
+MiniLM + mMARCO,q18,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + mMARCO,q19,paráfrasis,0.8262346571285599,1.0,0.5,1.0,20
+MiniLM + mMARCO,q20,paráfrasis,0.7967075809905066,1.0,1.0,1.0,20
+E5 + mMARCO,q01,léxica,0.9055866445611575,1.0,0.75,1.0,20
+E5 + mMARCO,q02,léxica,1.0,1.0,1.0,1.0,20
+E5 + mMARCO,q03,léxica,0.8262346571285599,1.0,0.5,0.5,20
+E5 + mMARCO,q04,léxica,0.9832184408687481,1.0,1.0,1.0,20
+E5 + mMARCO,q05,léxica,0.878961873034099,1.0,0.6666666666666666,1.0,20
+E5 + mMARCO,q06,léxica,1.0,1.0,1.0,1.0,20
+E5 + mMARCO,q07,léxica,0.944847956559586,1.0,1.0,1.0,20
+E5 + mMARCO,q08,léxica,1.0,1.0,1.0,1.0,20
+E5 + mMARCO,q09,paráfrasis,0.944847956559586,1.0,1.0,1.0,20
+E5 + mMARCO,q10,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + mMARCO,q11,paráfrasis,0.878961873034099,1.0,0.6666666666666666,1.0,20
+E5 + mMARCO,q12,paráfrasis,0.7255804225316207,1.0,1.0,1.0,20
+E5 + mMARCO,q13,paráfrasis,0.7170533846952881,1.0,0.5,1.0,20
+E5 + mMARCO,q14,paráfrasis,0.8903894887369824,1.0,0.75,1.0,20
+E5 + mMARCO,q15,paráfrasis,0.9639404333166532,1.0,1.0,1.0,20
+E5 + mMARCO,q16,paráfrasis,0.8262346571285599,1.0,0.5,1.0,20
+E5 + mMARCO,q17,paráfrasis,0.631251450669265,1.0,1.0,1.0,20
+E5 + mMARCO,q18,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + mMARCO,q19,paráfrasis,0.8262346571285599,1.0,0.5,1.0,20
+E5 + mMARCO,q20,paráfrasis,0.7967075809905066,1.0,1.0,1.0,20
+MiniLM + BGE,q01,léxica,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q02,léxica,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q03,léxica,0.8262346571285599,1.0,0.5,0.5,20
+MiniLM + BGE,q04,léxica,0.9726097514324383,1.0,1.0,1.0,20
+MiniLM + BGE,q05,léxica,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q06,léxica,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q07,léxica,0.9639404333166532,1.0,1.0,1.0,20
+MiniLM + BGE,q08,léxica,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q09,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q10,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q11,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q12,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q13,paráfrasis,0.6594889048333293,1.0,0.5,1.0,20
+MiniLM + BGE,q14,paráfrasis,0.9903929125301808,1.0,1.0,1.0,20
+MiniLM + BGE,q15,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q16,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q17,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q18,paráfrasis,1.0,1.0,1.0,1.0,20
+MiniLM + BGE,q19,paráfrasis,0.9639404333166532,1.0,1.0,1.0,20
+MiniLM + BGE,q20,paráfrasis,0.7967075809905066,1.0,1.0,1.0,20
+E5 + BGE,q01,léxica,1.0,1.0,1.0,1.0,20
+E5 + BGE,q02,léxica,1.0,1.0,1.0,1.0,20
+E5 + BGE,q03,léxica,0.8262346571285599,1.0,0.5,0.5,20
+E5 + BGE,q04,léxica,0.9726097514324383,1.0,1.0,1.0,20
+E5 + BGE,q05,léxica,1.0,1.0,1.0,1.0,20
+E5 + BGE,q06,léxica,1.0,1.0,1.0,1.0,20
+E5 + BGE,q07,léxica,0.9639404333166532,1.0,1.0,1.0,20
+E5 + BGE,q08,léxica,1.0,1.0,1.0,1.0,20
+E5 + BGE,q09,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + BGE,q10,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + BGE,q11,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + BGE,q12,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + BGE,q13,paráfrasis,0.6594889048333293,1.0,0.5,1.0,20
+E5 + BGE,q14,paráfrasis,0.9903929125301808,1.0,1.0,1.0,20
+E5 + BGE,q15,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + BGE,q16,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + BGE,q17,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + BGE,q18,paráfrasis,1.0,1.0,1.0,1.0,20
+E5 + BGE,q19,paráfrasis,0.9639404333166532,1.0,1.0,1.0,20
+E5 + BGE,q20,paráfrasis,0.7967075809905066,1.0,1.0,1.0,20
+Híbrido RRF,q01,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF,q02,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF,q03,léxica,0.8262346571285599,1.0,0.5,0.5,20
+Híbrido RRF,q04,léxica,0.9726097514324383,1.0,1.0,1.0,20
+Híbrido RRF,q05,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF,q06,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF,q07,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF,q08,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF,q09,paráfrasis,0.9639404333166532,1.0,1.0,1.0,20
+Híbrido RRF,q10,paráfrasis,0.6309297535714574,0.5,1.0,1.0,20
+Híbrido RRF,q11,paráfrasis,0.9726097514324383,1.0,1.0,1.0,20
+Híbrido RRF,q12,paráfrasis,0.3288315337890528,1.0,0.5,1.0,20
+Híbrido RRF,q13,paráfrasis,0.6097426926720908,1.0,0.5,1.0,20
+Híbrido RRF,q14,paráfrasis,0.7520764230169481,1.0,0.5,1.0,20
+Híbrido RRF,q15,paráfrasis,0.7967075809905066,1.0,1.0,1.0,20
+Híbrido RRF,q16,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF,q17,paráfrasis,0.8262346571285599,1.0,0.5,1.0,20
+Híbrido RRF,q18,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF,q19,paráfrasis,0.8262346571285599,1.0,0.5,1.0,20
+Híbrido RRF,q20,paráfrasis,0.6278397607958708,0.5,1.0,1.0,20
+Híbrido RRF + BGE,q01,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q02,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q03,léxica,0.8262346571285599,1.0,0.5,0.5,20
+Híbrido RRF + BGE,q04,léxica,0.9726097514324383,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q05,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q06,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q07,léxica,0.9639404333166532,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q08,léxica,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q09,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q10,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q11,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q12,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q13,paráfrasis,0.6594889048333293,1.0,0.5,1.0,20
+Híbrido RRF + BGE,q14,paráfrasis,0.9903929125301808,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q15,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q16,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q17,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q18,paráfrasis,1.0,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q19,paráfrasis,0.9639404333166532,1.0,1.0,1.0,20
+Híbrido RRF + BGE,q20,paráfrasis,0.7967075809905066,1.0,1.0,1.0,20

@@ -1,0 +1,11 @@
+A vs. B,A gana,empate,B gana,Δ nDCG@5 medio
+MiniLM vs. BM25,12,5,3,0.155
+E5 vs. BM25,13,5,2,0.226
+E5 vs. MiniLM,9,9,2,0.071
+MiniLM + mMARCO vs. MiniLM,7,7,6,0.009
+E5 + mMARCO vs. E5,2,6,12,-0.064
+MiniLM + BGE vs. MiniLM,8,10,2,0.079
+E5 + BGE vs. E5,8,8,4,0.008
+E5 + BGE vs. BM25,14,6,0,0.233
+Híbrido RRF vs. E5,3,7,10,-0.094
+Híbrido RRF + BGE vs. E5 + BGE,0,20,0,0.0

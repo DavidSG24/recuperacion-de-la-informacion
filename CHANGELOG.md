@@ -3,6 +3,10 @@
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [Unreleased]
+### Added
+- Actividad 4A (`Entrega_4A/`): buscador semántico de dos etapas (bi-encoder + HNSW + cross-encoder), fusión híbrida RRF,
+  evaluación con juicios graduados, tablero comparativo con ipywidgets y reporte LaTeX de tres páginas.
+
 ### Changed
 - Carpetas renombradas: `2A-motor-busqueda-bm25/` → `Entrega_2A/` y `Tarea/` → `Entrega_3B/`.
 

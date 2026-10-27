@@ -1,0 +1,21 @@
+id,tipo,consulta,relevantes (grado)
+q01,léxica,agujero negro supermasivo en el centro de la galaxia,"doc_011(2), doc_014(1), doc_015(1), doc_019(1)"
+q02,léxica,nixtamalización del maíz para tortillas,doc_031(2)
+q03,léxica,ransomware respaldo y cifrado,"doc_101(2), doc_109(1)"
+q04,léxica,energía solar fotovoltaica y almacenamiento en baterías,"doc_061(2), doc_062(1), doc_091(1)"
+q05,léxica,inflación y tasa de interés del banco central,"doc_050(2), doc_052(1), doc_056(1)"
+q06,léxica,telescopio espacial infrarrojo,doc_010(2)
+q07,léxica,preparación para correr un maratón,"doc_041(2), doc_028(1)"
+q08,léxica,autenticación multifactor y gestor de contraseñas,"doc_102(2), doc_107(2), doc_100(1)"
+q09,paráfrasis,coche eléctrico que se recarga en poco tiempo,"doc_090(2), doc_091(1)"
+q10,paráfrasis,cita con el doctor por videollamada,doc_027(2)
+q11,paráfrasis,ordenador que aprende a partir de ejemplos,"doc_000(2), doc_001(1), doc_005(1)"
+q12,paráfrasis,vehículo de cero emisiones,"doc_090(2), doc_091(1), doc_094(1), doc_097(1)"
+q13,paráfrasis,cómo evitar que me roben las cuentas en internet,"doc_102(2), doc_107(2), doc_100(2), doc_105(1)"
+q14,paráfrasis,por qué sube el precio de las cosas,"doc_050(2), doc_052(1), doc_053(1), doc_056(1)"
+q15,paráfrasis,pan apto para celíacos,"doc_037(2), doc_030(1)"
+q16,paráfrasis,dormir poco afecta la concentración,"doc_025(2), doc_023(1)"
+q17,paráfrasis,planetas parecidos a la Tierra donde podría haber vida,"doc_013(2), doc_012(1)"
+q18,paráfrasis,el derrumbe del imperio de Roma,doc_072(2)
+q19,paráfrasis,buscar textos por su significado y no por sus palabras,"doc_007(2), doc_003(1)"
+q20,paráfrasis,cuidar el corazón,"doc_026(2), doc_024(1)"

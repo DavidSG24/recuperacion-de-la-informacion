@@ -1,0 +1,16 @@
+# Actividad 4A — Buscador semántico híbrido y re-ranking con Transformers
+# Instalación: pip install -r requirements.txt   (probado con Python 3.14 en macOS arm64, CPU)
+torch==2.14.1                  # backend de los modelos Transformer
+transformers==5.21.0
+sentence-transformers==6.2.0   # bi-encoders (MiniLM, E5) y cross-encoders (mMARCO, BGE)
+huggingface_hub==2.3.0         # descarga de los modelos a la caché local
+tokenizers==0.23.3
+hnswlib==0.8.0                 # índice HNSW de la unidad 3 para el Top-20 por coseno
+nltk==3.10.4                   # stopwords y SnowballStemmer del BM25 de la unidad 2
+numpy==2.5.4
+pandas==3.1.0
+matplotlib==3.11.2             # figuras del reporte
+ipywidgets==8.1.9              # tablero comparativo interactivo
+ipykernel==7.4.0
+jupyterlab==4.6.4
+nbconvert==7.17.2              # ejecución completa: jupyter nbconvert --execute

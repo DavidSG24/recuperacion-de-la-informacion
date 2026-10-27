@@ -1,0 +1,13 @@
+consulta,tipo,texto,documento,grado,posición E5+BGE,raíces de la consulta (df)
+q07,léxica,preparación para correr un maratón,doc_028 · Actividad física y longevidad,1,3,prepar=1 corr=1 maraton=1
+q10,paráfrasis,cita con el doctor por videollamada,doc_027 · Telemedicina y consulta a distancia,2,1,cit=2 doctor=0 videollam=0
+q11,paráfrasis,ordenador que aprende a partir de ejemplos,doc_001 · Redes neuronales profundas,1,3,orden=2 aprend=3 part=17 ejempl=1
+q12,paráfrasis,vehículo de cero emisiones,doc_090 · Automóviles eléctricos y autonomía,2,1,vehicul=4 cer=1 emision=3
+q13,paráfrasis,cómo evitar que me roben las cuentas en internet,doc_107 · Gestión de contraseñas,2,3,evit=5 rob=2 cuent=0 internet=0
+q14,paráfrasis,por qué sube el precio de las cosas,doc_056 · Bancos centrales y tipo de cambio,1,2,sub=5 preci=1 cos=0
+q14,paráfrasis,por qué sube el precio de las cosas,doc_053 · Comercio internacional y aranceles,1,3,sub=5 preci=1 cos=0
+q14,paráfrasis,por qué sube el precio de las cosas,doc_052 · Desempleo y mercado laboral,1,5,sub=5 preci=1 cos=0
+q15,paráfrasis,pan apto para celíacos,doc_037 · Panadería sin gluten,2,1,pan=1 apto=0 celiac=0
+q19,paráfrasis,buscar textos por su significado y no por sus palabras,doc_003 · Recuperación de información y RAG,1,3,busc=12 text=2 signific=2 palabr=2
+q20,paráfrasis,cuidar el corazón,doc_024 · Nutrición y dieta mediterránea,1,1,cuid=0 corazon=1
+q20,paráfrasis,cuidar el corazón,doc_026 · Enfermedades cardiovasculares,2,2,cuid=0 corazon=1
