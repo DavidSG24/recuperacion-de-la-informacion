@@ -4,6 +4,9 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [Unreleased]
 ### Added
+- Actividad 6A (`Entrega_6A/`): agrupamiento sin etiquetas (K-Means, Ward, UMAP+HDBSCAN) con selección por silueta,
+  tópicos por c-TF-IDF, proyección UMAP comparando dos configuraciones, mapa interactivo con ipywidgets + plotly,
+  auditoría externa y reporte LaTeX de tres páginas.
 - Actividad 4A (`Entrega_4A/`): buscador semántico de dos etapas (bi-encoder + HNSW + cross-encoder), fusión híbrida RRF,
   evaluación con juicios graduados, tablero comparativo con ipywidgets y reporte LaTeX de tres páginas.
 
