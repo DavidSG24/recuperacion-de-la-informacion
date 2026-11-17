@@ -6,6 +6,7 @@ Entrega_3B/data/
 
 # Paquete de entrega (duplica los archivos del repositorio)
 *.zip
+Entrega_*/Actividad*_DavidSegundoGarcia/
 
 # Python / Jupyter
 __pycache__/
