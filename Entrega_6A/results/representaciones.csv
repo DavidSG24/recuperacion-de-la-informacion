@@ -1,0 +1,5 @@
+representación,origen,dim,coseno medio,"coseno [mín, máx]",silueta media (k 6-20),silueta máx.,k de la máx.
+mpnet,nuevo,768,0.192,"[-0.14, 0.75]",0.16,0.177,12
+MiniLM,unidad 4,384,0.203,"[-0.17, 0.80]",0.145,0.166,14
+E5-query,nuevo,768,0.815,"[0.76, 0.90]",0.059,0.066,12
+E5-passage,unidad 4,768,0.765,"[0.69, 0.89]",0.058,0.066,13

@@ -1,0 +1,21 @@
+# Actividad 6A — Agrupamiento, análisis de tópicos y visualización de un corpus
+# Instalación: pip install -r requirements.txt   (probado con Python 3.14 en macOS arm64, CPU)
+torch==2.14.1                  # backend de los modelos Transformer
+transformers==5.21.0
+sentence-transformers==6.2.0   # embeddings: MiniLM y E5 (unidad 4) y mpnet
+huggingface_hub==2.3.0
+tokenizers==0.23.3
+scikit-learn==1.9.1            # K-Means, Ward, HDBSCAN, silueta, ARI/NMI, trustworthiness
+scipy==1.18.1                  # distancias y correlación de Spearman
+umap-learn==0.6.0              # reducción a 5D (clustering) y proyección 2D
+numba==0.68.1                  # dependencia de umap-learn
+nltk==3.10.4                   # stopwords del español para c-TF-IDF
+numpy==2.5.4
+pandas==3.1.0
+matplotlib==3.11.2             # figuras del reporte
+plotly==7.1.0                  # mapa interactivo (FigureWidget)
+anywidget==0.11.0              # requerido por plotly.FigureWidget
+ipywidgets==8.1.9              # controles de la interfaz
+ipykernel==7.4.0
+jupyterlab==4.6.4
+nbconvert==7.17.2              # ejecución completa: jupyter nbconvert --execute

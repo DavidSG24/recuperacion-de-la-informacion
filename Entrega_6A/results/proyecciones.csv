@@ -1,0 +1,4 @@
+proyección,trustworthiness@10,vecinos preservados@10,Spearman distancias,silueta 2D
+"A · local (nn=5, md=0.0)",0.921 ± 0.003,0.644 ± 0.005,0.408 ± 0.023,0.512 ± 0.027
+"B · global (nn=30, md=0.5)",0.902 ± 0.011,0.602 ± 0.015,0.578 ± 0.019,0.270 ± 0.017
+PCA (varianza explicada 13.7%),0.805,0.398,0.532,0.012

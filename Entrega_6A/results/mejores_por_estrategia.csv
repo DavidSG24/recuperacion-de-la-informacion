@@ -1,0 +1,4 @@
+estrategia,máx. sin restricción,mejor válida,k,silueta,Davies-Bouldin,ruido %,tamaño mín.,estabilidad (ARI)
+K-Means,k=13 · sil 0.186 · mín 5,k=13,13,0.186,2.16,0.0,5,0.62 ± 0.07
+Ward,k=20 · sil 0.205 · mín 2,k=10,10,0.169,2.37,0.0,6,0.74 ± 0.10
+UMAP+HDBSCAN,"nn=10, mcs=3 · sil 0.203 · mín 4","nn=10, mcs=6",9,0.18,2.27,10.0,8,0.46 ± 0.28

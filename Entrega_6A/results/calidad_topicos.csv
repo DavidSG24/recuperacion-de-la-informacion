@@ -1,0 +1,4 @@
+método,coherencia NPMI,diversidad
+frecuencia,-0.347,0.931
+TF-IDF medio,-0.31,0.954
+c-TF-IDF,-0.108,0.974

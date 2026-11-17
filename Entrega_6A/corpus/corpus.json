@@ -1,0 +1,722 @@
+[
+  {
+    "id": "doc_000",
+    "titulo": "Qué es el aprendizaje automático",
+    "categoria": "Inteligencia Artificial",
+    "texto": "El aprendizaje automático es la rama de la inteligencia artificial que permite a una computadora mejorar su desempeño en una tarea a partir de datos y no de reglas escritas a mano. Los algoritmos ajustan parámetros internos minimizando una función de pérdida sobre ejemplos de entrenamiento. Cuando el modelo memoriza el ruido del conjunto de datos en lugar de aprender el patrón general se produce sobreajuste, un problema que se combate con regularización y validación cruzada."
+  },
+  {
+    "id": "doc_001",
+    "titulo": "Redes neuronales profundas",
+    "categoria": "Inteligencia Artificial",
+    "texto": "Una red neuronal profunda apila varias capas de unidades no lineales que transforman progresivamente la representación de la entrada. El entrenamiento usa retropropagación del error y descenso de gradiente estocástico para actualizar los pesos. El aprendizaje profundo domina hoy tareas de visión por computadora y procesamiento de lenguaje natural, aunque exige grandes volúmenes de datos etiquetados y un costo de cómputo considerable en tarjetas gráficas especializadas."
+  },
+  {
+    "id": "doc_002",
+    "titulo": "Modelos de lenguaje y transformers",
+    "categoria": "Inteligencia Artificial",
+    "texto": "La arquitectura transformer introdujo el mecanismo de atención, que pondera la relevancia de cada token respecto a los demás sin necesidad de recurrencia. Los modelos de lenguaje entrenados con esta arquitectura predicen la siguiente palabra sobre billones de tokens y adquieren capacidades de resumen, traducción y respuesta a preguntas. Su principal riesgo es la alucinación: generar texto fluido pero factualmente incorrecto."
+  },
+  {
+    "id": "doc_003",
+    "titulo": "Recuperación de información y RAG",
+    "categoria": "Inteligencia Artificial",
+    "texto": "La generación aumentada por recuperación combina un buscador con un modelo generativo. Primero se recuperan los fragmentos más relevantes de una base documental y después se entregan al modelo como contexto para redactar la respuesta. Esta estrategia reduce la alucinación y permite citar fuentes verificables. La calidad final depende críticamente de la etapa de recuperación, donde conviven métodos léxicos como BM25 y métodos densos basados en embeddings."
+  },
+  {
+    "id": "doc_004",
+    "titulo": "Sesgo algorítmico y equidad",
+    "categoria": "Inteligencia Artificial",
+    "texto": "Un modelo entrenado con datos históricos reproduce y a veces amplifica los sesgos presentes en ellos. Se han documentado sistemas de selección de personal que penalizaban currículos de mujeres y modelos de reconocimiento facial con tasas de error mucho mayores en pieles oscuras. Auditar la equidad exige medir el desempeño por subgrupo, documentar la procedencia de los datos y mantener supervisión humana en las decisiones críticas."
+  },
+  {
+    "id": "doc_005",
+    "titulo": "Aprendizaje por refuerzo",
+    "categoria": "Inteligencia Artificial",
+    "texto": "En el aprendizaje por refuerzo un agente interactúa con un entorno, toma acciones y recibe recompensas. Su objetivo es aprender una política que maximice la recompensa acumulada a largo plazo, equilibrando exploración y explotación. Esta familia de algoritmos logró resultados notables en juegos de estrategia como el go y el ajedrez, y hoy se aplica al control de robots, la gestión de inventarios y el ajuste fino de modelos de lenguaje."
+  },
+  {
+    "id": "doc_006",
+    "titulo": "Visión por computadora",
+    "categoria": "Inteligencia Artificial",
+    "texto": "La visión por computadora busca extraer información semántica de imágenes y video. Las redes convolucionales detectan bordes y texturas en las primeras capas y objetos completos en las profundas. Sus aplicaciones incluyen el diagnóstico asistido por imagen, la inspección de calidad en líneas de producción y los sistemas de conducción autónoma que identifican peatones y señales de tránsito en tiempo real."
+  },
+  {
+    "id": "doc_007",
+    "titulo": "Vectores densos y embeddings",
+    "categoria": "Inteligencia Artificial",
+    "texto": "Un embedding representa una palabra, una frase o un documento como un vector numérico en un espacio de cientos de dimensiones donde la cercanía geométrica refleja similitud semántica. Gracias a esa propiedad, una consulta puede recuperar documentos que no comparten ninguna palabra literal con ella. Los índices vectoriales aproximados permiten buscar entre millones de vectores en milisegundos."
+  },
+  {
+    "id": "doc_008",
+    "titulo": "MLOps y ciclo de vida del modelo",
+    "categoria": "Inteligencia Artificial",
+    "texto": "Poner un modelo en producción implica mucho más que entrenarlo. MLOps cubre el versionado de datos y de modelos, las pruebas automatizadas, el despliegue progresivo y el monitoreo posterior. La deriva de datos, cuando la distribución real se aleja de la de entrenamiento, degrada silenciosamente la precisión, por lo que se establecen alertas y reentrenamientos periódicos."
+  },
+  {
+    "id": "doc_009",
+    "titulo": "Ética y regulación de la IA",
+    "categoria": "Inteligencia Artificial",
+    "texto": "Varios países avanzan hacia marcos regulatorios que clasifican los sistemas de inteligencia artificial según su nivel de riesgo. Las aplicaciones consideradas de alto riesgo, como las usadas en salud, crédito o justicia, quedan sujetas a requisitos de transparencia, trazabilidad y evaluación de impacto. El debate central es cómo fomentar la innovación sin renunciar a la protección de los derechos fundamentales."
+  },
+  {
+    "id": "doc_010",
+    "titulo": "El telescopio espacial James Webb",
+    "categoria": "Astronomía",
+    "texto": "El telescopio espacial James Webb observa en el infrarrojo desde el punto de Lagrange L2, a un millón y medio de kilómetros de la Tierra. Su espejo segmentado de berilio recubierto de oro mide seis metros y medio y le permite captar la luz de las primeras galaxias formadas tras el Big Bang. Un parasol del tamaño de una cancha de tenis mantiene sus instrumentos a temperaturas criogénicas."
+  },
+  {
+    "id": "doc_011",
+    "titulo": "Agujeros negros supermasivos",
+    "categoria": "Astronomía",
+    "texto": "En el centro de casi todas las galaxias grandes reside un agujero negro supermasivo con millones o miles de millones de veces la masa del Sol. No emiten luz, pero se detectan por el movimiento de las estrellas cercanas y por la radiación del disco de acreción. La primera imagen de la sombra de uno de ellos se obtuvo combinando radiotelescopios repartidos por todo el planeta."
+  },
+  {
+    "id": "doc_012",
+    "titulo": "Exploración de Marte",
+    "categoria": "Astronomía",
+    "texto": "Los vehículos de exploración enviados a Marte han recorrido cráteres y deltas fluviales buscando indicios de habitabilidad pasada. Los análisis confirman que el planeta rojo tuvo agua líquida estable en su superficie hace miles de millones de años. Las muestras de roca recolectadas esperan una futura misión de retorno que las traiga a laboratorios terrestres para su estudio detallado."
+  },
+  {
+    "id": "doc_013",
+    "titulo": "Exoplanetas y zonas habitables",
+    "categoria": "Astronomía",
+    "texto": "Se han confirmado más de cinco mil planetas fuera del sistema solar, la mayoría detectados por el método de tránsito, que mide la caída periódica del brillo de una estrella. Un planeta se considera potencialmente habitable si orbita en la franja donde el agua puede permanecer líquida. La espectroscopía de sus atmósferas busca gases como oxígeno o metano que podrían ser biofirmas."
+  },
+  {
+    "id": "doc_014",
+    "titulo": "El ciclo de vida de las estrellas",
+    "categoria": "Astronomía",
+    "texto": "Una estrella nace del colapso gravitatorio de una nube de gas y polvo y pasa la mayor parte de su existencia fusionando hidrógeno en helio. Cuando agota el combustible de su núcleo se expande como gigante roja. Las estrellas de masa modesta terminan como enanas blancas, mientras que las más masivas estallan en supernovas y dejan tras de sí una estrella de neutrones o un agujero negro."
+  },
+  {
+    "id": "doc_015",
+    "titulo": "Materia oscura y energía oscura",
+    "categoria": "Astronomía",
+    "texto": "Las curvas de rotación de las galaxias giran más rápido de lo que explica la materia visible, lo que sugiere la presencia de materia oscura. A escalas mayores, la expansión del universo se acelera, fenómeno atribuido a una energía oscura de naturaleza desconocida. Juntas representarían el noventa y cinco por ciento del contenido del cosmos y siguen sin detección directa."
+  },
+  {
+    "id": "doc_016",
+    "titulo": "Cohetes reutilizables",
+    "categoria": "Astronomía",
+    "texto": "La reutilización de la primera etapa de los cohetes redujo drásticamente el costo de poner carga en órbita. Tras separarse, la etapa reenciende sus motores, controla su descenso con aletas de rejilla y aterriza verticalmente sobre una plataforma marina. Esta práctica abrió la puerta a constelaciones de satélites de comunicaciones con miles de unidades."
+  },
+  {
+    "id": "doc_017",
+    "titulo": "La Luna y las misiones tripuladas",
+    "categoria": "Astronomía",
+    "texto": "Los programas actuales de retorno a la Luna apuntan al polo sur, donde cráteres en sombra permanente conservan hielo de agua aprovechable como recurso. Una estación en órbita lunar serviría de escala para descensos a la superficie y como banco de pruebas para futuras misiones a Marte. El principal reto sigue siendo proteger a la tripulación de la radiación cósmica."
+  },
+  {
+    "id": "doc_018",
+    "titulo": "Asteroides y defensa planetaria",
+    "categoria": "Astronomía",
+    "texto": "Los programas de vigilancia catalogan objetos cercanos a la Tierra y calculan su órbita con décadas de anticipación. Una misión demostró que es posible desviar la trayectoria de un asteroide mediante un impacto cinético, alterando su período orbital de forma medible. La detección temprana es la parte más crítica de cualquier estrategia de defensa planetaria."
+  },
+  {
+    "id": "doc_019",
+    "titulo": "Ondas gravitacionales",
+    "categoria": "Astronomía",
+    "texto": "La fusión de dos agujeros negros deforma el espacio-tiempo y emite ondas gravitacionales que los interferómetros terrestres detectan como variaciones de longitud mil veces menores que el diámetro de un protón. Su observación abrió una ventana completamente nueva al universo, complementaria a la astronomía electromagnética tradicional."
+  },
+  {
+    "id": "doc_020",
+    "titulo": "Prevención de la diabetes tipo 2",
+    "categoria": "Salud",
+    "texto": "La diabetes tipo 2 se caracteriza por resistencia a la insulina y niveles elevados de glucosa en sangre. El médico de primer contacto suele detectarla mediante una prueba de hemoglobina glucosilada. La evidencia muestra que perder entre cinco y siete por ciento del peso corporal y caminar con regularidad reduce a la mitad el riesgo de desarrollarla en personas con prediabetes."
+  },
+  {
+    "id": "doc_021",
+    "titulo": "Cómo funcionan las vacunas de ARN mensajero",
+    "categoria": "Salud",
+    "texto": "Las vacunas de ARN mensajero entregan a las células instrucciones para fabricar una proteína del patógeno. El sistema inmunitario reconoce esa proteína y genera anticuerpos y linfocitos de memoria sin que exista infección. El ARN se degrada en pocas horas y nunca entra al núcleo celular, por lo que no modifica el material genético de la persona vacunada."
+  },
+  {
+    "id": "doc_022",
+    "titulo": "Resistencia a los antibióticos",
+    "categoria": "Salud",
+    "texto": "El uso indebido de antibióticos en la práctica clínica y en la ganadería acelera la selección de bacterias resistentes. Infecciones antes triviales vuelven a ser peligrosas cuando los tratamientos de primera línea dejan de funcionar. Los programas de uso racional exigen confirmar el diagnóstico bacteriano, elegir el fármaco de espectro más estrecho posible y completar siempre el esquema indicado."
+  },
+  {
+    "id": "doc_023",
+    "titulo": "Salud mental y ansiedad",
+    "categoria": "Salud",
+    "texto": "Los trastornos de ansiedad afectan a una proporción creciente de la población joven. La terapia cognitivo conductual, que trabaja sobre los pensamientos automáticos y la evitación, muestra eficacia comparable a la farmacológica en cuadros leves y moderados. El ejercicio aeróbico regular y la higiene del sueño funcionan como coadyuvantes, y el especialista evalúa cuándo conviene combinar ambas vías."
+  },
+  {
+    "id": "doc_024",
+    "titulo": "Nutrición y dieta mediterránea",
+    "categoria": "Salud",
+    "texto": "La dieta mediterránea privilegia verduras, legumbres, pescado, frutos secos y aceite de oliva extra virgen, con consumo limitado de carne roja y azúcares añadidos. Estudios de cohorte la asocian con menor incidencia de eventos cardiovasculares. Su beneficio parece provenir del patrón alimentario completo más que de un nutriente aislado."
+  },
+  {
+    "id": "doc_025",
+    "titulo": "El sueño y la memoria",
+    "categoria": "Salud",
+    "texto": "Durante el sueño profundo el cerebro consolida los recuerdos formados durante la vigilia y elimina desechos metabólicos a través del sistema glinfático. Dormir menos de seis horas de forma sostenida deteriora la atención, el estado de ánimo y la regulación del apetito. La exposición a pantallas antes de acostarse retrasa la secreción de melatonina."
+  },
+  {
+    "id": "doc_026",
+    "titulo": "Enfermedades cardiovasculares",
+    "categoria": "Salud",
+    "texto": "El infarto agudo de miocardio ocurre cuando una placa de ateroma se rompe y obstruye una arteria coronaria. La atención en la primera hora es determinante para la supervivencia. El control de la presión arterial, el colesterol y el abandono del tabaco constituyen las intervenciones preventivas con mayor impacto poblacional."
+  },
+  {
+    "id": "doc_027",
+    "titulo": "Telemedicina y consulta a distancia",
+    "categoria": "Salud",
+    "texto": "La consulta remota por video se consolidó como una modalidad habitual de seguimiento en pacientes crónicos. Permite revisar resultados de laboratorio y ajustar dosis sin traslados, lo que mejora la adherencia en zonas rurales. Sus límites aparecen cuando el especialista necesita una exploración física directa o estudios de imagen inmediatos."
+  },
+  {
+    "id": "doc_028",
+    "titulo": "Actividad física y longevidad",
+    "categoria": "Salud",
+    "texto": "Las recomendaciones internacionales sitúan el umbral en ciento cincuenta minutos semanales de actividad moderada más dos sesiones de fuerza. El entrenamiento de resistencia preserva la masa muscular y la densidad ósea, factores decisivos para evitar caídas en la vejez. Incluso caminatas breves y frecuentes reducen la mortalidad frente al sedentarismo total."
+  },
+  {
+    "id": "doc_029",
+    "titulo": "Genómica y medicina personalizada",
+    "categoria": "Salud",
+    "texto": "La secuenciación del genoma permite anticipar cómo metabolizará un paciente determinado fármaco y ajustar la dosis en consecuencia. En oncología, el perfil molecular del tumor guía la elección de terapias dirigidas. El reto pendiente es interpretar variantes de significado incierto y garantizar la privacidad de los datos genéticos."
+  },
+  {
+    "id": "doc_030",
+    "titulo": "El arte de la masa madre",
+    "categoria": "Gastronomía",
+    "texto": "La masa madre es un cultivo vivo de levaduras silvestres y bacterias lácticas que fermenta la harina. La fermentación lenta desarrolla acidez, mejora la conservación del pan y hace más digerible el gluten. Mantener el cultivo exige refrescarlo con harina y agua a temperatura estable; su comportamiento cambia notablemente entre invierno y verano."
+  },
+  {
+    "id": "doc_031",
+    "titulo": "Cocina mexicana y maíz nixtamalizado",
+    "categoria": "Gastronomía",
+    "texto": "La nixtamalización consiste en cocer el maíz con cal, lo que libera niacina, aumenta el calcio disponible y permite moler la masa para tortillas. Esta técnica prehispánica es la base de la cocina mexicana y explica por qué las poblaciones que la adoptaron no sufrieron pelagra. La UNESCO reconoció esta tradición culinaria como patrimonio inmaterial."
+  },
+  {
+    "id": "doc_032",
+    "titulo": "Fermentación y alimentos probióticos",
+    "categoria": "Gastronomía",
+    "texto": "El chucrut, el kimchi, el kéfir y el miso son productos de fermentación controlada. Las bacterias transforman azúcares en ácidos que conservan el alimento y aportan aromas complejos. Algunos de estos productos contienen microorganismos vivos que pueden contribuir a la diversidad de la microbiota intestinal cuando se consumen sin pasteurizar."
+  },
+  {
+    "id": "doc_033",
+    "titulo": "Cortes de carne y punto de cocción",
+    "categoria": "Gastronomía",
+    "texto": "La terneza de un corte depende del contenido de tejido conectivo y del músculo del que proviene. Los cortes duros mejoran con cocciones largas a baja temperatura que gelatinizan el colágeno, mientras que un lomo se arruina si se pasa de término medio. La reacción de Maillard, responsable del dorado y el aroma, requiere una superficie seca y calor alto."
+  },
+  {
+    "id": "doc_034",
+    "titulo": "Café de especialidad",
+    "categoria": "Gastronomía",
+    "texto": "El puntaje de un café de especialidad depende de la variedad, la altitud, el procesamiento del grano y el perfil de tueste. Los cafés lavados tienden a mostrar acidez limpia y cítrica, mientras que los naturales aportan notas afrutadas más intensas. La molienda y la temperatura del agua determinan la extracción final en la taza."
+  },
+  {
+    "id": "doc_035",
+    "titulo": "Cocina al vacío",
+    "categoria": "Gastronomía",
+    "texto": "La cocción al vacío sumerge el alimento sellado en un baño de agua a temperatura controlada durante horas. Al no superar nunca la temperatura objetivo, el resultado es homogéneo de borde a centro y muy difícil de sobrecocer. Suele terminarse con un sellado rápido en sartén muy caliente para desarrollar corteza."
+  },
+  {
+    "id": "doc_036",
+    "titulo": "Aceite de oliva y su cata",
+    "categoria": "Gastronomía",
+    "texto": "Un aceite de oliva virgen extra se evalúa por su frutado, su amargor y su picor, atributos ligados a los polifenoles. La cosecha temprana produce aceites más verdes e intensos pero con menor rendimiento. La luz y el calor oxidan el producto, por lo que conviene guardarlo en envases opacos y lejos de la estufa."
+  },
+  {
+    "id": "doc_037",
+    "titulo": "Panadería sin gluten",
+    "categoria": "Gastronomía",
+    "texto": "Sustituir el trigo obliga a reconstruir la estructura que aportaba el gluten. Las mezclas de arroz, almidón de yuca y psyllium retienen gas y humedad, mientras que el huevo aporta elasticidad. La hidratación suele ser mucho más alta que en una masa convencional y la miga resulta más frágil."
+  },
+  {
+    "id": "doc_038",
+    "titulo": "Sushi y arroz avinagrado",
+    "categoria": "Gastronomía",
+    "texto": "El corazón del sushi no es el pescado sino el arroz sazonado con vinagre, azúcar y sal, servido a temperatura corporal. El grano debe quedar suelto pero cohesionado, y su enfriamiento se hace abanicando en un recipiente de madera. La calidad del corte del pescado exige un cuchillo de filo muy afilado y un solo movimiento continuo."
+  },
+  {
+    "id": "doc_039",
+    "titulo": "Chocolate desde el cacao",
+    "categoria": "Gastronomía",
+    "texto": "La elaboración del chocolate parte de la fermentación de las semillas de cacao, que desarrolla los precursores del aroma. Siguen el tostado, el descascarillado, la molienda y el conchado, que reduce la aspereza. El templado final ordena los cristales de manteca de cacao y da al producto brillo y chasquido al partirse."
+  },
+  {
+    "id": "doc_040",
+    "titulo": "La Copa del Mundo de fútbol",
+    "categoria": "Deportes",
+    "texto": "El torneo reúne cada cuatro años a las selecciones nacionales clasificadas por confederación. La fase de grupos define a los equipos que avanzan a la eliminación directa, donde un solo partido decide la continuidad. La final concentra una de las audiencias televisivas más grandes del planeta y transforma la economía de la ciudad sede."
+  },
+  {
+    "id": "doc_041",
+    "titulo": "Maratón y preparación física",
+    "categoria": "Deportes",
+    "texto": "Correr cuarenta y dos kilómetros exige una base aeróbica construida durante meses. El plan típico combina tiradas largas a ritmo cómodo, series de velocidad y semanas de descarga para asimilar la carga. La estrategia de hidratación y de ingesta de carbohidratos durante la carrera determina si el corredor evita el temido muro del kilómetro treinta."
+  },
+  {
+    "id": "doc_042",
+    "titulo": "Baloncesto y estadística avanzada",
+    "categoria": "Deportes",
+    "texto": "El análisis de datos cambió la forma de jugar baloncesto. Al comparar la eficiencia por posesión, los equipos descubrieron que el triple y el tiro cercano al aro rinden más que el lanzamiento de media distancia. Métricas como el porcentaje efectivo de tiro y el valor esperado por posesión guían hoy tanto el reclutamiento como el diseño de jugadas."
+  },
+  {
+    "id": "doc_043",
+    "titulo": "Ciclismo de ruta y grandes vueltas",
+    "categoria": "Deportes",
+    "texto": "Una gran vuelta se disputa durante tres semanas con etapas llanas, contrarreloj y jornadas de alta montaña. El equipo protege al líder del desgaste y del viento hasta los puertos decisivos. La potencia sostenida en vatios por kilogramo es el indicador que mejor predice el rendimiento en subidas prolongadas."
+  },
+  {
+    "id": "doc_044",
+    "titulo": "Natación y técnica de crol",
+    "categoria": "Deportes",
+    "texto": "En natación, la resistencia del agua crece con el cuadrado de la velocidad, por lo que la eficiencia técnica pesa más que la fuerza bruta. Una buena posición corporal, la rotación desde la cadera y un agarre alto del codo reducen el arrastre. Los nadadores miden su eficiencia contando las brazadas necesarias por largo."
+  },
+  {
+    "id": "doc_045",
+    "titulo": "Ajedrez y motores de análisis",
+    "categoria": "Deportes",
+    "texto": "Los motores de ajedrez superan desde hace décadas a los mejores jugadores humanos y hoy sirven como herramienta de estudio. Las aperturas se preparan con ayuda de bases de datos y de evaluaciones profundas, lo que desplazó la creatividad hacia posiciones poco exploradas. El formato rápido y el relámpago ganaron popularidad gracias a las plataformas en línea."
+  },
+  {
+    "id": "doc_046",
+    "titulo": "Tenis y superficies de juego",
+    "categoria": "Deportes",
+    "texto": "La arcilla frena la pelota y favorece los peloteos largos, el césped acelera el juego y premia el saque, y la pista dura ofrece un comportamiento intermedio. Adaptar el desplazamiento, el efecto liftado y la altura del bote a cada superficie explica por qué muy pocos jugadores dominan las cuatro grandes citas del calendario."
+  },
+  {
+    "id": "doc_047",
+    "titulo": "Lesiones deportivas y rehabilitación",
+    "categoria": "Deportes",
+    "texto": "La rotura del ligamento cruzado anterior es una de las lesiones más temidas en deportes de giro y salto. La recuperación combina cirugía, fortalecimiento progresivo y reeducación neuromuscular durante nueve a doce meses. Volver a competir antes de recuperar la simetría de fuerza multiplica el riesgo de recaída."
+  },
+  {
+    "id": "doc_048",
+    "titulo": "Los Juegos Olímpicos modernos",
+    "categoria": "Deportes",
+    "texto": "Los Juegos Olímpicos modernos nacieron en Atenas en mil ochocientos noventa y seis y hoy reúnen a más de diez mil atletas. El programa incorpora disciplinas urbanas como la escalada y el patinaje para atraer audiencias jóvenes. La organización enfrenta críticas por el costo de la infraestructura y su uso posterior."
+  },
+  {
+    "id": "doc_049",
+    "titulo": "Fútbol americano y estrategia",
+    "categoria": "Deportes",
+    "texto": "Cada jugada de fútbol americano es una unidad táctica planificada con antelación. El coordinador ofensivo alterna carrera y pase para mantener impredecible a la defensa, mientras el mariscal de campo lee la formación rival antes del saque. Las decisiones en cuarta oportunidad se apoyan cada vez más en modelos de probabilidad de victoria."
+  },
+  {
+    "id": "doc_050",
+    "titulo": "Inflación y política monetaria",
+    "categoria": "Economía",
+    "texto": "Cuando la inflación se aleja del objetivo, el banco central eleva la tasa de interés de referencia para encarecer el crédito y enfriar la demanda agregada. El efecto no es inmediato: la política monetaria opera con rezagos de varios trimestres. Subir demasiado rápido arriesga una recesión, y hacerlo tarde permite que las expectativas de precios se desanclen."
+  },
+  {
+    "id": "doc_051",
+    "titulo": "Mercados bursátiles e índices",
+    "categoria": "Economía",
+    "texto": "Un índice bursátil resume el comportamiento conjunto de una canasta de acciones ponderada normalmente por capitalización. Los fondos indexados replican esa canasta con comisiones muy bajas y han desplazado a buena parte de la gestión activa. La diversificación reduce el riesgo específico de cada emisora pero no elimina el riesgo de mercado."
+  },
+  {
+    "id": "doc_052",
+    "titulo": "Desempleo y mercado laboral",
+    "categoria": "Economía",
+    "texto": "La tasa de desempleo mide la proporción de personas que buscan empleo activamente y no lo encuentran. Un mercado laboral estrecho presiona los salarios al alza y puede alimentar la inflación de servicios. La informalidad complica la lectura del indicador en economías emergentes, donde mucha gente trabaja sin contrato ni seguridad social."
+  },
+  {
+    "id": "doc_053",
+    "titulo": "Comercio internacional y aranceles",
+    "categoria": "Economía",
+    "texto": "Un arancel encarece las importaciones y protege a la industria local, pero traslada el costo al consumidor y suele provocar represalias. Las cadenas globales de valor fragmentan la producción entre países, de modo que un mismo bien cruza varias fronteras antes de venderse. Las disrupciones logísticas recientes impulsaron estrategias de acercamiento de proveedores."
+  },
+  {
+    "id": "doc_054",
+    "titulo": "Criptomonedas y cadena de bloques",
+    "categoria": "Economía",
+    "texto": "Una cadena de bloques es un registro distribuido cuya integridad se sostiene en criptografía y en un mecanismo de consenso entre nodos. Las criptomonedas eliminan la necesidad de un intermediario central, a costa de una volatilidad elevada y de un consumo energético considerable en los esquemas de prueba de trabajo. Los reguladores debaten cómo tratarlas fiscalmente."
+  },
+  {
+    "id": "doc_055",
+    "titulo": "Finanzas personales y ahorro",
+    "categoria": "Economía",
+    "texto": "Un fondo de emergencia equivalente a entre tres y seis meses de gastos evita recurrir a deuda cara ante un imprevisto. Después conviene liquidar los pasivos de tasa alta antes de invertir. El interés compuesto premia la constancia: aportaciones pequeñas y sostenidas durante décadas superan a intentos aislados de acertar el momento del mercado."
+  },
+  {
+    "id": "doc_056",
+    "titulo": "Bancos centrales y tipo de cambio",
+    "categoria": "Economía",
+    "texto": "El tipo de cambio refleja la oferta y la demanda de divisas y responde al diferencial de tasas, al riesgo país y al flujo comercial. Una depreciación abarata las exportaciones pero encarece los insumos importados. Las intervenciones cambiarias solo suelen ser eficaces cuando acompañan a fundamentos macroeconómicos consistentes."
+  },
+  {
+    "id": "doc_057",
+    "titulo": "Deuda pública y déficit fiscal",
+    "categoria": "Economía",
+    "texto": "El déficit aparece cuando el gasto del gobierno supera sus ingresos y se financia emitiendo deuda. Lo relevante no es el monto absoluto sino la relación entre la deuda y el producto interno bruto, y el costo de refinanciarla. Un perfil de vencimientos concentrado en el corto plazo aumenta la vulnerabilidad ante subidas de tasas."
+  },
+  {
+    "id": "doc_058",
+    "titulo": "Economía del comportamiento",
+    "categoria": "Economía",
+    "texto": "La economía del comportamiento documenta desviaciones sistemáticas del agente racional: aversión a la pérdida, exceso de confianza y descuento hiperbólico del futuro. El diseño de la opción por defecto influye enormemente en decisiones de ahorro para el retiro. Estos hallazgos inspiraron políticas públicas basadas en pequeños empujones."
+  },
+  {
+    "id": "doc_059",
+    "titulo": "Automatización y futuro del empleo",
+    "categoria": "Economía",
+    "texto": "La automatización sustituye tareas rutinarias antes que ocupaciones completas. La evidencia histórica sugiere que se crean nuevos puestos, pero la transición perjudica a quienes no pueden recalificarse con rapidez. Las políticas de formación continua y de portabilidad de prestaciones buscan amortiguar ese desajuste."
+  },
+  {
+    "id": "doc_060",
+    "titulo": "Cambio climático y gases de efecto invernadero",
+    "categoria": "Medio Ambiente",
+    "texto": "La concentración de dióxido de carbono en la atmósfera superó las cuatrocientas veinte partes por millón, la cifra más alta en millones de años. Ese exceso retiene radiación infrarroja y eleva la temperatura media del planeta. Los efectos ya observables incluyen olas de calor más intensas, retroceso glaciar y elevación del nivel del mar."
+  },
+  {
+    "id": "doc_061",
+    "titulo": "Energía solar fotovoltaica",
+    "categoria": "Medio Ambiente",
+    "texto": "El costo del panel solar cayó más de noventa por ciento en dos décadas, convirtiendo a la energía solar en la fuente de electricidad más barata en muchas regiones. Su intermitencia obliga a combinarla con almacenamiento en baterías o con redes flexibles capaces de mover excedentes entre zonas horarias."
+  },
+  {
+    "id": "doc_062",
+    "titulo": "Energía eólica marina",
+    "categoria": "Medio Ambiente",
+    "texto": "Los parques eólicos instalados mar adentro aprovechan vientos más constantes y fuertes que en tierra firme. Las turbinas flotantes permiten instalarse en aguas profundas donde la cimentación fija resulta inviable. Los principales retos son el mantenimiento en condiciones adversas y la conexión submarina a la red eléctrica."
+  },
+  {
+    "id": "doc_063",
+    "titulo": "Escasez de agua y gestión hídrica",
+    "categoria": "Medio Ambiente",
+    "texto": "El estrés hídrico afecta a ciudades que dependen de acuíferos sobreexplotados y de lluvias cada vez más erráticas. Reducir las fugas de la red de distribución suele ser la medida más rentable, seguida por el tratamiento y la reutilización del agua residual. La desalinización resuelve el suministro pero consume mucha energía y genera salmuera."
+  },
+  {
+    "id": "doc_064",
+    "titulo": "Pérdida de biodiversidad",
+    "categoria": "Medio Ambiente",
+    "texto": "La transformación del suelo para agricultura y ganadería es la principal causa de pérdida de biodiversidad, por delante de la caza y la contaminación. La fragmentación del hábitat aísla poblaciones y reduce su diversidad genética. Los corredores biológicos y las áreas protegidas conectadas son la respuesta de conservación más efectiva."
+  },
+  {
+    "id": "doc_065",
+    "titulo": "Economía circular y residuos",
+    "categoria": "Medio Ambiente",
+    "texto": "La economía circular busca mantener materiales en uso el mayor tiempo posible mediante reparación, reutilización y reciclaje. El diseño del producto determina hasta el ochenta por ciento de su impacto ambiental, por lo que la clave está en la etapa de concepción. Los esquemas de responsabilidad extendida obligan al fabricante a hacerse cargo del residuo."
+  },
+  {
+    "id": "doc_066",
+    "titulo": "Contaminación por plásticos en el océano",
+    "categoria": "Medio Ambiente",
+    "texto": "Millones de toneladas de plástico llegan cada año al mar, donde la radiación solar y el oleaje los fragmentan en microplásticos que entran en la cadena alimentaria. La mayor parte procede de un número reducido de ríos con gestión de residuos deficiente. Las soluciones eficaces combinan recolección en origen y reducción del envase de un solo uso."
+  },
+  {
+    "id": "doc_067",
+    "titulo": "Incendios forestales",
+    "categoria": "Medio Ambiente",
+    "texto": "Las temporadas de incendios se alargan a medida que suben las temperaturas y disminuye la humedad del combustible vegetal. Décadas de supresión total acumularon biomasa en los bosques, lo que favorece fuegos de copa difíciles de controlar. Las quemas prescritas y el manejo del paisaje reducen la severidad de los eventos extremos."
+  },
+  {
+    "id": "doc_068",
+    "titulo": "Agricultura regenerativa",
+    "categoria": "Medio Ambiente",
+    "texto": "La agricultura regenerativa busca recuperar la salud del suelo con cobertura vegetal permanente, rotación de cultivos y mínima labranza. Un suelo con más materia orgánica retiene agua, resiste la erosión y almacena carbono. La transición implica una caída temporal de rendimientos que desalienta a muchos productores sin apoyo financiero."
+  },
+  {
+    "id": "doc_069",
+    "titulo": "Captura y almacenamiento de carbono",
+    "categoria": "Medio Ambiente",
+    "texto": "Las tecnologías de captura retienen dióxido de carbono en la chimenea industrial o directamente del aire y lo inyectan en formaciones geológicas profundas. Hoy su costo por tonelada sigue siendo alto y su escala es marginal frente a las emisiones globales. Se consideran complementarias, nunca sustitutas, de la reducción de emisiones en la fuente."
+  },
+  {
+    "id": "doc_070",
+    "titulo": "La imprenta de Gutenberg",
+    "categoria": "Historia",
+    "texto": "La imprenta de tipos móviles desarrollada en Maguncia hacia mil cuatrocientos cincuenta abarató la reproducción de libros y multiplicó la circulación de ideas. En medio siglo se imprimieron millones de ejemplares en Europa. El fenómeno alimentó la Reforma protestante, la estandarización de las lenguas vernáculas y el nacimiento de la ciencia moderna."
+  },
+  {
+    "id": "doc_071",
+    "titulo": "La Revolución Industrial",
+    "categoria": "Historia",
+    "texto": "La máquina de vapor, el carbón y el telar mecánico transformaron primero la industria textil británica y luego toda la economía europea. La población se desplazó del campo a ciudades fabriles con condiciones sanitarias precarias. De esa tensión surgieron el sindicalismo, la legislación laboral y la primera conciencia sobre la contaminación urbana."
+  },
+  {
+    "id": "doc_072",
+    "titulo": "La caída del Imperio Romano de Occidente",
+    "categoria": "Historia",
+    "texto": "La deposición del último emperador en el año cuatrocientos setenta y seis fue el desenlace de un proceso largo: presión fiscal insostenible, inestabilidad política, epidemias y migraciones de pueblos germánicos. En Oriente, el Imperio continuó mil años más desde Constantinopla, conservando el derecho romano y buena parte del saber clásico."
+  },
+  {
+    "id": "doc_073",
+    "titulo": "La conquista de Tenochtitlan",
+    "categoria": "Historia",
+    "texto": "La caída de Tenochtitlan en mil quinientos veintiuno no fue obra exclusiva de un puñado de europeos, sino de una coalición con pueblos sometidos por la Triple Alianza, sumada al efecto devastador de la viruela. La ciudad lacustre, con su sistema de calzadas y chinampas, era una de las mayores del mundo en su tiempo."
+  },
+  {
+    "id": "doc_074",
+    "titulo": "La Revolución Francesa",
+    "categoria": "Historia",
+    "texto": "La crisis fiscal de la monarquía y una estructura estamental injusta desembocaron en la toma de la Bastilla en mil setecientos ochenta y nueve. La Declaración de los Derechos del Hombre estableció principios de igualdad ante la ley que atravesarían el siglo siguiente. El proceso derivó en el Terror y terminó abriendo paso al ascenso de Napoleón."
+  },
+  {
+    "id": "doc_075",
+    "titulo": "La Segunda Guerra Mundial",
+    "categoria": "Historia",
+    "texto": "El conflicto movilizó a más de cien millones de personas y dejó cerca de sesenta millones de muertos, en su mayoría civiles. El desenlace redibujó las fronteras europeas, inauguró el orden bipolar de la Guerra Fría y dio origen a las Naciones Unidas y al sistema internacional de derechos humanos."
+  },
+  {
+    "id": "doc_076",
+    "titulo": "La Ruta de la Seda",
+    "categoria": "Historia",
+    "texto": "Más que un camino único, la Ruta de la Seda fue una red de trayectos terrestres y marítimos que conectó China con el Mediterráneo durante siglos. Por ella circularon seda, especias, papel y pólvora, pero también religiones, tecnologías y epidemias como la peste negra."
+  },
+  {
+    "id": "doc_077",
+    "titulo": "La carrera espacial y la Guerra Fría",
+    "categoria": "Historia",
+    "texto": "El lanzamiento del Sputnik en mil novecientos cincuenta y siete desató una competencia tecnológica entre las dos superpotencias. La llegada de una tripulación a la Luna doce años después consolidó la ventaja estadounidense. Más allá del prestigio, la carrera dejó satélites de comunicaciones, microelectrónica y una nueva rama del derecho internacional."
+  },
+  {
+    "id": "doc_078",
+    "titulo": "La independencia de México",
+    "categoria": "Historia",
+    "texto": "El movimiento iniciado en mil ochocientos diez por un cura de Dolores derivó en una guerra de once años con fases muy distintas, desde la insurgencia popular hasta la negociación entre élites criollas. La consumación en mil ochocientos veintiuno dejó un país endeudado y con profundas disputas sobre la forma de gobierno."
+  },
+  {
+    "id": "doc_079",
+    "titulo": "La peste negra en Europa",
+    "categoria": "Historia",
+    "texto": "La epidemia de mediados del siglo catorce mató a una tercera parte de la población europea. La escasez de mano de obra elevó los salarios y debilitó la servidumbre feudal, mientras la autoridad de las instituciones tradicionales quedaba en entredicho. Fue una catástrofe demográfica con consecuencias económicas duraderas."
+  },
+  {
+    "id": "doc_080",
+    "titulo": "El impresionismo",
+    "categoria": "Arte y Música",
+    "texto": "El impresionismo rompió con la pintura académica al salir del taller y trabajar al aire libre, buscando capturar la luz cambiante mediante pinceladas sueltas y colores puros yuxtapuestos. La crítica de su tiempo se burló del acabado inconcluso de las obras, que hoy figuran entre las más visitadas de los museos."
+  },
+  {
+    "id": "doc_081",
+    "titulo": "La música barroca",
+    "categoria": "Arte y Música",
+    "texto": "El barroco musical desarrolló el bajo continuo, el contrapunto imitativo y formas como la fuga, la suite y el concierto grosso. La afinación y los instrumentos de la época diferían de los actuales, por lo que la interpretación históricamente informada busca recuperar sonoridades originales con cuerdas de tripa y arcos ligeros."
+  },
+  {
+    "id": "doc_082",
+    "titulo": "El muralismo mexicano",
+    "categoria": "Arte y Música",
+    "texto": "El muralismo llevó la pintura a los muros de edificios públicos para narrar la historia nacional a una población mayoritariamente analfabeta. Sus autores combinaron técnicas al fresco con iconografía prehispánica y una lectura política del pasado. El resultado convirtió a los edificios de gobierno en espacios de disputa simbólica."
+  },
+  {
+    "id": "doc_083",
+    "titulo": "El jazz y la improvisación",
+    "categoria": "Arte y Música",
+    "texto": "El jazz nació en Nueva Orleans del encuentro entre tradiciones africanas, blues y música europea. La improvisación sobre una progresión armónica es su rasgo distintivo: el solista construye frases en tiempo real dialogando con la sección rítmica. El bebop aceleró los tempos y complicó las armonías hasta convertirlo en música de escucha atenta."
+  },
+  {
+    "id": "doc_084",
+    "titulo": "Fotografía documental",
+    "categoria": "Arte y Música",
+    "texto": "La fotografía documental busca registrar la realidad social con voluntad testimonial más que estética. El fotógrafo enfrenta dilemas éticos sobre el consentimiento de los retratados y sobre el límite entre mostrar y explotar el sufrimiento ajeno. El pie de foto resulta tan determinante como la imagen para fijar su significado."
+  },
+  {
+    "id": "doc_085",
+    "titulo": "Arquitectura moderna",
+    "categoria": "Arte y Música",
+    "texto": "La arquitectura moderna abandonó el ornamento y adoptó el hormigón armado, el acero y el vidrio como lenguaje. La planta libre y la fachada independiente de la estructura permitieron espacios flexibles y grandes ventanales. Sus críticos señalan que muchos conjuntos ignoraron la escala humana y el clima local."
+  },
+  {
+    "id": "doc_086",
+    "titulo": "El cine y el montaje",
+    "categoria": "Arte y Música",
+    "texto": "El montaje organiza el tiempo y el sentido de una película: la yuxtaposición de dos planos genera en el espectador una idea que ninguno contiene por separado. El corte invisible del cine clásico busca que la costura pase inadvertida, mientras otras tradiciones exhiben el corte para provocar extrañeza."
+  },
+  {
+    "id": "doc_087",
+    "titulo": "Producción musical digital",
+    "categoria": "Arte y Música",
+    "texto": "La estación de trabajo digital permite grabar, editar y mezclar sin un estudio costoso. La cuantización corrige la precisión rítmica y los complementos de dinámica controlan el rango, aunque el abuso de compresión en la masterización aplanó el sonido de buena parte de la música comercial de las últimas décadas."
+  },
+  {
+    "id": "doc_088",
+    "titulo": "El grabado y la obra múltiple",
+    "categoria": "Arte y Música",
+    "texto": "El grabado permite reproducir una misma imagen en tiradas numeradas a partir de una matriz de madera, metal o piedra. Cada técnica deja una huella reconocible: la aguafuerte muerde el metal con ácido, la xilografía se talla en relieve y la litografía se basa en la repulsión entre grasa y agua."
+  },
+  {
+    "id": "doc_089",
+    "titulo": "Ópera y voz lírica",
+    "categoria": "Arte y Música",
+    "texto": "La ópera integra música, teatro, escenografía y danza en un mismo espectáculo. La clasificación vocal responde a la tesitura y al color: soprano, mezzo, tenor, barítono y bajo. Cantar sin amplificación sobre una orquesta completa exige una técnica de resonancia que proyecta la voz en la sala."
+  },
+  {
+    "id": "doc_090",
+    "titulo": "Automóviles eléctricos y autonomía",
+    "categoria": "Transporte",
+    "texto": "El automóvil eléctrico sustituye el motor de combustión por uno eléctrico alimentado por una batería de iones de litio. Su autonomía real depende de la temperatura ambiente, la velocidad y el uso de la climatización. La carga rápida en corriente continua recupera el ochenta por ciento de la capacidad en media hora, y el frenado regenerativo devuelve energía al paquete."
+  },
+  {
+    "id": "doc_091",
+    "titulo": "Baterías de estado sólido",
+    "categoria": "Transporte",
+    "texto": "Las baterías de estado sólido sustituyen el electrolito líquido por uno sólido, lo que promete mayor densidad energética, carga más veloz y menor riesgo de incendio. Su producción masiva todavía enfrenta problemas de durabilidad en los ciclos y de costo. Los fabricantes de vehículos las consideran la siguiente frontera de la movilidad eléctrica."
+  },
+  {
+    "id": "doc_092",
+    "titulo": "Conducción autónoma",
+    "categoria": "Transporte",
+    "texto": "Los sistemas de conducción autónoma se clasifican en niveles según cuánta supervisión humana requieren. La percepción combina cámaras, radar y sensores láser para construir un modelo del entorno. El escenario difícil no es la autopista sino la ciudad, con peatones impredecibles, obras y señalización deteriorada."
+  },
+  {
+    "id": "doc_093",
+    "titulo": "Transporte público y movilidad urbana",
+    "categoria": "Transporte",
+    "texto": "Un sistema de autobús de tránsito rápido con carril confinado mueve decenas de miles de pasajeros por hora a una fracción del costo de una línea de metro. La integración tarifaria y la frecuencia importan más que la tecnología del vehículo para que la gente deje de usar su automóvil particular."
+  },
+  {
+    "id": "doc_094",
+    "titulo": "Trenes de alta velocidad",
+    "categoria": "Transporte",
+    "texto": "El tren de alta velocidad compite con el avión en trayectos de hasta ochocientos kilómetros, con menor emisión por pasajero y estaciones en el centro de las ciudades. Requiere vía dedicada, sin cruces a nivel y con curvas de radio amplio, lo que eleva enormemente la inversión inicial."
+  },
+  {
+    "id": "doc_095",
+    "titulo": "Logística de última milla",
+    "categoria": "Transporte",
+    "texto": "La última milla concentra buena parte del costo del comercio electrónico porque implica muchas entregas pequeñas y dispersas. Los centros de distribución urbanos, los casilleros automatizados y el reparto en bicicleta de carga reducen los kilómetros recorridos por paquete y la congestión en zonas densas."
+  },
+  {
+    "id": "doc_096",
+    "titulo": "Ciclismo urbano e infraestructura",
+    "categoria": "Transporte",
+    "texto": "La bicicleta gana participación cuando existe una red continua y protegida, no tramos aislados. La evidencia muestra que el número de ciclistas crece con la infraestructura segregada y que la siniestralidad por viaje disminuye a medida que aumenta el número de ciclistas en la calle."
+  },
+  {
+    "id": "doc_097",
+    "titulo": "Aviación y combustibles sostenibles",
+    "categoria": "Transporte",
+    "texto": "La aviación aporta cerca del dos por ciento de las emisiones globales y es difícil de electrificar por la densidad energética que exige el vuelo. Los combustibles sostenibles producidos a partir de residuos o de hidrógeno verde permiten reducir emisiones sin cambiar la flota, pero hoy su volumen de producción es mínimo."
+  },
+  {
+    "id": "doc_098",
+    "titulo": "Seguridad vial",
+    "categoria": "Transporte",
+    "texto": "Reducir la velocidad máxima en zonas urbanas disminuye de forma no lineal la probabilidad de muerte de un peatón atropellado. El enfoque de sistema seguro asume que las personas cometen errores y diseña calles, vehículos y velocidades para que esos errores no resulten fatales."
+  },
+  {
+    "id": "doc_099",
+    "titulo": "Motores de combustión interna",
+    "categoria": "Transporte",
+    "texto": "El motor de combustión interna convierte en trabajo mecánico solo entre el veinticinco y el treinta y cinco por ciento de la energía del combustible; el resto se disipa como calor. La inyección directa, la sobrealimentación y los sistemas híbridos elevaron la eficiencia, aunque el control de óxidos de nitrógeno sigue siendo el punto débil del ciclo diésel."
+  },
+  {
+    "id": "doc_100",
+    "titulo": "Phishing e ingeniería social",
+    "categoria": "Ciberseguridad",
+    "texto": "El phishing suplanta a una entidad de confianza para inducir a la víctima a entregar credenciales o a ejecutar un archivo malicioso. Las campañas dirigidas investigan a la persona y replican el tono interno de la organización. La defensa más rentable combina segundo factor de autenticación, filtrado de correo y simulacros periódicos con el personal."
+  },
+  {
+    "id": "doc_101",
+    "titulo": "Ransomware y recuperación",
+    "categoria": "Ciberseguridad",
+    "texto": "El ransomware cifra los archivos de la víctima y exige un pago para entregar la clave; la variante de doble extorsión además amenaza con publicar la información robada. Pagar no garantiza la recuperación y financia al atacante. La única defensa confiable es un respaldo probado, aislado de la red y con copias inmutables."
+  },
+  {
+    "id": "doc_102",
+    "titulo": "Autenticación multifactor",
+    "categoria": "Ciberseguridad",
+    "texto": "Un segundo factor detiene la mayoría de los ataques basados en credenciales robadas. Los códigos por mensaje de texto son vulnerables al secuestro de línea, por lo que se prefieren las aplicaciones generadoras de códigos temporales o las llaves físicas con criptografía de clave pública, resistentes incluso a sitios falsos."
+  },
+  {
+    "id": "doc_103",
+    "titulo": "Criptografía de clave pública",
+    "categoria": "Ciberseguridad",
+    "texto": "La criptografía asimétrica usa un par de claves: lo cifrado con la pública solo se descifra con la privada. Ese esquema sostiene el intercambio seguro de llaves, la firma digital y los certificados que autentican a los sitios web. La llegada del cómputo cuántico impulsa la migración hacia algoritmos poscuánticos."
+  },
+  {
+    "id": "doc_104",
+    "titulo": "Seguridad en aplicaciones web",
+    "categoria": "Ciberseguridad",
+    "texto": "Las vulnerabilidades más frecuentes siguen siendo la inyección de código, el control de acceso roto y la exposición de datos sensibles. La defensa parte de validar toda entrada, usar consultas parametrizadas y aplicar el principio de mínimo privilegio. Las pruebas estáticas y dinámicas dentro de la canalización de integración continua detectan fallos antes del despliegue."
+  },
+  {
+    "id": "doc_105",
+    "titulo": "Arquitectura de confianza cero",
+    "categoria": "Ciberseguridad",
+    "texto": "El modelo de confianza cero abandona la idea de una red interna segura y verifica cada solicitud según identidad, dispositivo y contexto. La segmentación fina limita el movimiento lateral de un atacante que ya logró entrar. Su implantación es gradual y depende de un inventario de activos fiable."
+  },
+  {
+    "id": "doc_106",
+    "titulo": "Seguridad en la cadena de suministro de software",
+    "categoria": "Ciberseguridad",
+    "texto": "Comprometer una biblioteca ampliamente utilizada permite alcanzar a miles de organizaciones con un solo ataque. Firmar los artefactos, fijar versiones exactas y mantener un inventario de componentes ayuda a detectar dependencias vulnerables. Los repositorios públicos también sufren de paquetes con nombres parecidos a los legítimos."
+  },
+  {
+    "id": "doc_107",
+    "titulo": "Gestión de contraseñas",
+    "categoria": "Ciberseguridad",
+    "texto": "Reutilizar una contraseña convierte cualquier filtración ajena en un problema propio. Un gestor de contraseñas genera cadenas largas y únicas por servicio, y solo exige recordar una clave maestra. Las políticas de rotación forzada frecuente han caído en desuso porque empujan a patrones predecibles."
+  },
+  {
+    "id": "doc_108",
+    "titulo": "Privacidad y protección de datos personales",
+    "categoria": "Ciberseguridad",
+    "texto": "Las normativas de protección de datos exigen base legal para el tratamiento, minimización de la información recolectada y notificación de brechas en plazos cortos. La seudonimización y el cifrado reducen el impacto de una filtración. El derecho de acceso y de supresión obliga a saber con exactitud dónde vive cada dato."
+  },
+  {
+    "id": "doc_109",
+    "titulo": "Respuesta a incidentes",
+    "categoria": "Ciberseguridad",
+    "texto": "Un plan de respuesta define roles, canales de comunicación alternos y criterios de escalamiento antes de que ocurra el incidente. Las fases van de la detección y contención a la erradicación, la recuperación y las lecciones aprendidas. Los ejercicios de mesa revelan huecos que ninguna herramienta detecta."
+  },
+  {
+    "id": "doc_110",
+    "titulo": "Kioto y el turismo cultural",
+    "categoria": "Viajes y Geografía",
+    "texto": "Kioto conserva más de mil templos y santuarios que sobrevivieron a la guerra. La ciudad enfrenta hoy la presión del turismo masivo sobre barrios residenciales estrechos, y ha respondido con restricciones de acceso y campañas de comportamiento. La mejor temporada para visitarla evita tanto la floración de los cerezos como el follaje de otoño."
+  },
+  {
+    "id": "doc_111",
+    "titulo": "La Patagonia",
+    "categoria": "Viajes y Geografía",
+    "texto": "La Patagonia se extiende por el sur de Argentina y Chile, con estepas ventosas, campos de hielo y macizos graníticos. El clima cambia varias veces al día y el viento condiciona cualquier travesía. Los glaciares que descienden desde los campos de hielo son de los pocos del mundo que todavía se pueden observar en avance activo."
+  },
+  {
+    "id": "doc_112",
+    "titulo": "El Amazonas",
+    "categoria": "Viajes y Geografía",
+    "texto": "La cuenca amazónica concentra la mayor selva tropical del planeta y una porción enorme del agua dulce superficial. El bosque genera buena parte de su propia lluvia mediante evapotranspiración, por lo que la deforestación puede empujarlo hacia un punto de inflexión de sabanización."
+  },
+  {
+    "id": "doc_113",
+    "titulo": "Islandia y el vulcanismo",
+    "categoria": "Viajes y Geografía",
+    "texto": "Islandia se asienta sobre la dorsal mesoatlántica y sobre un punto caliente, combinación que explica sus erupciones frecuentes y su abundancia geotérmica. Casi toda la calefacción del país proviene de agua caliente subterránea, y la electricidad se genera con recursos geotérmicos e hidráulicos."
+  },
+  {
+    "id": "doc_114",
+    "titulo": "Ciudades y turismo sostenible",
+    "categoria": "Viajes y Geografía",
+    "texto": "El exceso de visitantes encarece la vivienda, desplaza al comercio de barrio y satura el espacio público. Varias ciudades han limitado los alquileres de corta estancia, cobrado tasas de acceso o redistribuido flujos hacia zonas menos visitadas. Sin gestión de la demanda, la capacidad de carga se rebasa en pocos años."
+  },
+  {
+    "id": "doc_115",
+    "titulo": "Los desiertos del mundo",
+    "categoria": "Viajes y Geografía",
+    "texto": "Un desierto se define por su escasez de precipitación, no por su temperatura: la Antártida es el mayor desierto del planeta. En zonas áridas la amplitud térmica diaria es enorme y la vida se adapta con metabolismos nocturnos y estrategias extremas de retención de agua."
+  },
+  {
+    "id": "doc_116",
+    "titulo": "Viajar con presupuesto reducido",
+    "categoria": "Viajes y Geografía",
+    "texto": "Viajar barato depende más de la flexibilidad de fechas que de encontrar ofertas ocultas. Alojarse fuera del centro con buena conexión de transporte, comer donde come la gente local y comprar el traslado terrestre por anticipado suelen reducir el gasto diario a la mitad sin sacrificar experiencia."
+  },
+  {
+    "id": "doc_117",
+    "titulo": "Los Alpes y el turismo de montaña",
+    "categoria": "Viajes y Geografía",
+    "texto": "Los Alpes reciben decenas de millones de visitantes al año entre temporada de esquí y senderismo estival. El retroceso de los glaciares y la subida de la cota de nieve amenazan a las estaciones de baja altitud, que diversifican su oferta hacia actividades de verano."
+  },
+  {
+    "id": "doc_118",
+    "titulo": "Marruecos y las ciudades imperiales",
+    "categoria": "Viajes y Geografía",
+    "texto": "Fez, Marrakech, Mequinez y Rabat conservan medinas amuralladas donde los gremios artesanales mantienen técnicas centenarias de curtido, cerámica y trabajo del metal. La orientación en el laberinto de callejones es parte de la experiencia, y el regateo sigue rigiendo el comercio en los zocos."
+  },
+  {
+    "id": "doc_119",
+    "titulo": "Nueva Zelanda y su geografía",
+    "categoria": "Viajes y Geografía",
+    "texto": "Nueva Zelanda ocupa dos islas principales separadas por el estrecho de Cook. La Isla Sur está recorrida por los Alpes del Sur y por fiordos excavados por glaciares, mientras la Isla Norte concentra actividad volcánica y geotérmica. Su aislamiento produjo una fauna singular dominada por aves no voladoras."
+  }
+]

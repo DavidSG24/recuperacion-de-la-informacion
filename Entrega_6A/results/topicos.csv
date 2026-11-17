@@ -1,0 +1,14 @@
+grupo,docs,etiqueta (top-3 c-TF-IDF),términos 4-10,documentos representativos,silueta,NPMI
+0,5,glaciares · alpes · sur,"geotérmica, agua",La Patagonia | Islandia y el vulcanismo | Nueva Zelanda y su geografía,0.259,0.28
+1,10,criptografía · clave · confianza,"pública, cadena, defensa, llaves, segundo, sitios, factor",Autenticación multifactor | Seguridad en la cadena de suministro de software | Arquitectura de confianza cero,0.343,0.05
+2,12,temperatura · fermentación · masa,"gluten, cocina, arroz, metal, agua, acidez, molienda",El arte de la masa madre | Cocina mexicana y maíz nixtamalizado | Fermentación y alimentos probióticos,0.226,-0.15
+3,21,energía · carbono · emisiones,"solar, ciudades, mar, contaminación, combustión, agricultura, residuos",Aviación y combustibles sostenibles | Escasez de agua y gestión hídrica | Captura y almacenamiento de carbono,0.073,-0.45
+4,9,música · musical · espacios,"rítmica, pintura, libre, tradiciones",La música barroca | El cine y el montaje | El impresionismo,0.108,-0.34
+5,6,órbita · luna · marte,"retorno, cráteres, comunicaciones, satélites, misión, líquida, tripulación",La Luna y las misiones tripuladas | Asteroides y defensa planetaria | Cohetes reutilizables,0.209,0.16
+6,11,fuerza · física · sueño,"resistencia, cardiovasculares, especialista, atención, corporal, combina, seis",Actividad física y longevidad | Salud mental y ansiedad | Maratón y preparación física,0.06,-0.55
+7,9,mercado · deuda · inflación,"tasa, comportamiento, interés, futuro, empleo, ahorro, riesgo",Bancos centrales y tipo de cambio | Economía del comportamiento | Inflación y política monetaria,0.258,-0.16
+8,13,datos · modelo · aprendizaje,"modelos, computadora, lenguaje, respuesta, recuperación, visión, palabra",MLOps y ciclo de vida del modelo | Modelos de lenguaje y transformers | Recuperación de información y RAG,0.13,-0.16
+9,8,alta · velocidad · transporte,"ciclismo, bicicleta, disminuye, reducir, kilómetros, centro, zonas",Transporte público y movilidad urbana | Ciclismo urbano e infraestructura | Trenes de alta velocidad,0.214,-0.29
+10,6,guerra · pueblos · desenlace,"fiscal, derechos, obra, siglo, caída, sistema",La peste negra en Europa | La independencia de México | La caída del Imperio Romano de Occidente,0.334,-0.1
+11,5,fútbol · saque · equipos,"jugadores, análisis, datos",Baloncesto y estadística avanzada | Tenis y superficies de juego | Fútbol americano y estrategia,0.172,-0.15
+12,5,estrellas · galaxias · negros,"negro, universo, agujeros, agujero, luz, detectan, masa",Agujeros negros supermasivos | Ondas gravitacionales | Materia oscura y energía oscura,0.374,0.47
